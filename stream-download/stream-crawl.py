@@ -7,7 +7,13 @@ import html.parser
 def main(cookie, tag, pages):
     results = []
     for i in range(1, pages + 1):
-        results += parse_html(curl(cookie, tag, i))
+        page = '' 
+        try:
+            page = curl(cookie, tag, i)
+        except UnicodeDecodeError:
+            page = ''
+            print("Unicode Error for tag: {} and page: {}".format(tag, i))
+        results += parse_html(page)
     f = open('{}_stream.txt'.format(tag), 'w')
     for x in results:
         print(x.strip()+"\n", file=f)
