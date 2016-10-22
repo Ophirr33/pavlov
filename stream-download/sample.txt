@@ -1,0 +1,2390 @@
+  <!DOCTYPE HTML>
+<html lang="en-CA">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Real-time social media analytics for #hate - Keyhole</title><meta name="keywords" content="#hate" /><meta name="description" content="Reach, Impressions, and demographic data for #hate - Top Posts by @lilyallen @vpanozzo @TlrWorldWidellc" />	<meta name="robots" content="noindex, nofollow" />
+	<meta itemprop="photo" content="https://keyhole.co/img/photo-logo.jpg" />
+	<meta itemprop="image" content="https://keyhole.co/img/photo-logo.jpg" />
+	<meta itemprop="description" content="Keyhole is a real-time hashtag tracker for Twitter, Facebook and Instagram. It's visual dashboard is simple, beautiful and shareable!" />
+	<meta name="og:image" content="/img/hscreen/Keyhole-home.png" />
+	<meta name="og:url" content="https://keyhole.co" />
+	<meta name="og:description" content="Keyhole is a real-time hashtag tracker for Twitter, Facebook and Instagram. It's visual dashboard is simple, beautiful and shareable!" />
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		if (top.location != self.location && self.location.href.indexOf('preview') == -1) {
+			top.location = self.location.href
+		}
+	</script>
+
+			<!-- <link href="/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="/bootstrap/js/bootstrap.min.js"></script>
+	
+			<script type="text/javascript" src="/build/js/0-libs/jquery-ui-1-11-4.js?1476909067"></script>
+		<link rel="stylesheet" type="text/css" href="/build/css/external/jquery-ui-1-11-4.css?1476909068">
+	
+	<script src="/bootstrap/js/bootstrap-tooltip.js"></script>
+	<script src="/bootstrap/js/bootstrap-popover.js"></script>
+	<script src="/js/cookie.js"></script>
+	<script>var _kmq = _kmq || null;</script>
+	<script>var mixpanel = mixpanel || null;</script>
+	<script>var _cio = _cio || null;</script>
+	<script>var hj = hj || null;</script>
+	<script>
+		var Keyhole = Keyhole || {};
+		Keyhole.host = 'prod';
+	</script>
+	<link href="/build/css/pages/streaming.css?1476909071" rel="stylesheet">
+
+  <style>
+    footer {
+      display: none;
+    }
+  </style>
+
+	</head>
+	<body>
+					<!-- Google Tag Manager -->
+			<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TWH6CZ"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+			<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-TWH6CZ');</script>
+			<!-- End Google Tag Manager -->
+		
+		
+<div id="slingdigital" style="display:none;"><span id="topbar_title" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif;font-weight:100;">Whether you're measuring social campaigns, identifying customers or sharing reports, Keyhole is the easiest and most affordable way to do it</span> &nbsp;
+	<a style="color:#fff;text-decoration:underline;cursor:pointer;" id="topbar_link" href="http://blog.keyhole.co/post/44873406456/Real-time-Tracking-of-Campaigns-and-Topics" target="_blank" onclick="set_cookie('hide_sxsw', true);">Click here</a>
+	<span style="float:right;padding-right:10px;font-weight:normal;font-size:14px;">
+		<a class="close_notify" style="color:#fff;text-shadow:none;" href="javascript:void(0);">[ close ]</a>
+	</span>
+</div>
+
+
+	<header id="marcel">
+		<div class="header-container">
+			<div class="mobilemenu">
+				<img src="/img/marcel/menu.png" srcset="/img/marcel/menu.png 1x, /img/marcel/menu@2x.png 2x" alt="">
+			</div>
+			<div class="logo-keyhole">
+				<a href="/">
+					<img src="/img/marcel/logo_old.png" srcset="/img/marcel/logo_old.png 1x, /img/marcel/logo_old@2x.png 2x" alt="Hashtag Tracking">
+				</a>
+			</div>
+			<ul class="links-header">
+				<!-- mobile stuff -->
+					<div class="mobilemenu">
+						<img src="/img/marcel/menu.png" srcset="/img/marcel/menu.png 1x, /img/marcel/menu@2x.png 2x" alt="">
+					</div>
+					<div class="logo-keyhole">
+						<a href="/">
+							<img src="/img/marcel/logo_old.png" srcset="/img/marcel/logo_old.png 1x, /img/marcel/logo_old@2x.png 2x" alt="Hashtag Tracking">
+						</a>
+					</div>
+				<!-- end mobile stuff -->
+				<!-- CONDITIONAL LINKS -->
+		            <li>
+		            	<a href="/mytracks">My Tracks</a>
+					</li>
+					<li>
+						<a href="/old-tweets">Historical Data</a>
+					</li>
+					<li>
+						<a href="/social-analytics-features">Features</a>
+					</li>
+					<li class="dropdown">
+						<a href="/pricing">Upgrade</a>
+					</li>
+					<!-- <li class="dropdown">
+						<a href="/social-analytics-why">Why Keyhole</a>
+						<ul class="dropdown-menu">
+							<a href="/social-analytics-agencies" class=""><li>Agencies</li></a>
+							<a href="/social-analytics-executives" class=""><li>Executives</li></a>
+							<a href="/social-analytics-marketers" class=""><li>Marketers</li></a>
+							<a href="/social-analytics-journalists" class=""><li>Journalists</li></a>
+						</ul>
+					</li> -->
+					<li>
+						<a href="http://keyholeco.zendesk.com" target="_blank">Support</a>
+					</li>
+			</ul>
+			<div class="name-user">
+				<a class="user" href="/mytracks?&showDropdown=user">
+					coghlan.ty@gmail.com				</a>
+				<ul id="user-dropdown" class="user-dropdown">
+                	<li>
+                		<a href="/users/settings/">Settings</a>
+                	</li>
+										<li>
+						<a href="/users/logout">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<script type="text/javascript">
+
+		$(".name-user").hover(function() {
+			$('#user-dropdown').fadeIn("fast");
+		}, function() {
+			$('#user-dropdown').fadeOut("fast");
+		});
+	</script>
+
+
+
+<script>
+	// if (document.location.pathname.indexOf("instagram-analytics") > -1){
+	// 	$('.start-free-trial').attr('href', '/register/20/?product=accttrk');
+	// } else {
+	// 	$('.start-free-trial').attr('href', '/register/20/');
+	// }
+
+	$('.start-free-trial').on('click', function(e) {
+		if (document.location.pathname.indexOf("instagram-analytics") > -1) {
+			document.location.href = '/register/20/?product=accttrk';
+		} else {
+			document.location.href = '/register/20/';
+		}
+		e.preventDefault();
+	});
+
+
+</script>
+
+		<section id="streaming" class="app">
+    <div class="content">
+        <div class="tracker">
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="/img/marcel/logo_old.png" srcset="/img/marcel/logo_old.png 1x, /img/marcel/logo_old@2x.png" alt="Keyhole">
+                </div>
+
+                <div id="platforms">
+                 <!--    <form id="filterPlatformForm" method="post" action="http://keyhole.co/monitor/streaming/KCzm12/hate/1" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>                        <label>
+                            <input type="hidden" name="data[filters][platform][twitter]" id="twt_check_" value="0" /><input type="checkbox" name="data[filters][platform][twitter]" id="twt_check" value="1" checked="checked" />                            Twitter
+                        </label>
+                        <label>
+                            <input type="hidden" name="data[filters][platform][instagram]" id="ig_check_" value="0" /><input type="checkbox" name="data[filters][platform][instagram]" id="ig_check" value="1" />                            Instagram
+                        </label>
+                    </form> -->
+                    <form id="filterPlatformForm" method="post" action="http://keyhole.co/monitor/streaming/KCzm12/hate/1" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>                        <label>
+                                                            <input type="hidden" name="data[filters][platform][twitter]" id="twt_check_" value="0" /><input type="checkbox" name="data[filters][platform][twitter]" id="twt_check" value="1" checked="checked" />                                                        Twitter
+                        </label>
+                        <label>
+                                                                <input type="hidden" name="data[filters][platform][instagram]" id="ig_check_" value="0" /><input type="checkbox" name="data[filters][platform][instagram]" id="ig_check" class="poptip_upgrade" data-content="Instagram posts can be enabled by editing your track from &lt;a href=&#039;/mytracks&#039;&gt;My Tracks&lt;/a&gt; page" value="1" />                                                    Instagram
+                        </label>
+                </form>
+                </div>
+
+                <!-- old datebox location -->
+
+                <ul class="links">
+                    <li class="realtime">
+                        <a href="/realtime/KCzm12/hate">Dashboard</a>
+                    </li>
+                    <li class="streaming active">
+                        <a rel="nofollow" href="/streaming/KCzm12/hate">Streaming&nbsp;<span class="label label-danger">New</span></a>
+                    </li>
+                    <li class="influencers">
+                        <a href="/influencers/KCzm12/hate">Influencers</a>
+                    </li>
+                    <li class="media">
+                        <a href="/media/KCzm12/hate">Media</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="info-mobile">
+                Real-time Tracker: <span class="hash">#hate</span>            </div>
+            <div class="info">
+                Real-time Tracker: <span class="hash">#hate</span>                <div class="right-buttons">
+                    <div class="date_box">
+                        <div class="dropdown-arrow"></div>
+                        <div id="date_helper">
+                            <div class="time-range">Time Range</div>
+                            <div class="dates">
+                                <form id="filterDateForm" method="post" action="http://keyhole.co/monitor/streaming/KCzm12/hate/1" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>                                    <a class="date_link" rel="1" data-start="2016-10-21" data-end="2016-10-22">Last 1 day</a>
+                                    <a class="date_link" rel="7" data-start="2016-10-15" data-end="2016-10-22">Last 7 days</a>
+                                    <a class="date_link" rel="14" data-start="2016-10-08" data-end="2016-10-22">Last 14 days</a>
+                                    <a class="date_link" rel="30" data-start="2016-09-22" data-end="2016-10-22">Last 30 days</a>
+                                    <a class="date_link" rel="60" data-start="2016-08-23" data-end="2016-10-22">Last 60 days</a>
+                                    <a class="date_link" rel="90" data-start="2016-07-24" data-end="2016-10-22">Last 90 days</a>
+                                </form>                            </div>
+                        </div>
+                        <form id="date_form">
+                            <input id="date_range" type="text" value="Sep 22 - Oct 22" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div>
+                    <div class="top-controls">
+                        <div class="top">
+                            <div class="left">
+                                <form id="filterForm" method="post" action="http://keyhole.co/monitor/streaming/KCzm12/hate/1" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>                                <div class="data_filter text">
+                                    <label>
+                                        <input name="data[filters][search_term]" type="text" placeholder="Search Term" id="filtersSearchTerm" />                                    </label>
+                                </div>
+                                <div class="data_filter text">
+                                    <label>
+                                        <input name="data[filters][search_geo]" type="text" placeholder="Search Geography" id="filtersSearchGeo" />                                    </label>
+                                </div>
+                                <div class="data_filter text">
+                                    <button type="submit" id="advanced">Filter</button>                                </div>
+
+                                <div class="data_filter checkboxs" style="display:none">
+                                    <span>Sentiment</span>
+                                    <label>
+                                        <input type="hidden" name="data[filters][sentiment][positive]" id="filtersSentimentPositive_" value="0" /><input type="checkbox" name="data[filters][sentiment][positive]" value="1" id="filtersSentimentPositive" checked="checked" />                                        <img src="/img/marcel/sentiment_positive.png" class="sentiment orig">                                    </label>
+									<label>
+                                        <input type="hidden" name="data[filters][sentiment][slight_positive]" id="filtersSentimentSlightPositive_" value="0" /><input type="checkbox" name="data[filters][sentiment][slight_positive]" value="1" id="filtersSentimentSlightPositive" checked="checked" />                                        <img src="/img/marcel/sentiment_slight_positive.png" class="sentiment orig">                                    </label>
+                                    <label>
+                                        <input type="hidden" name="data[filters][sentiment][neutral]" id="filtersSentimentNeutral_" value="0" /><input type="checkbox" name="data[filters][sentiment][neutral]" value="1" id="filtersSentimentNeutral" checked="checked" />                                        <img src="/img/marcel/sentiment_neutral.png" class="sentiment orig">                                    </label>
+									<label>
+                                        <input type="hidden" name="data[filters][sentiment][slight_negative]" id="filtersSentimentSlightNegative_" value="0" /><input type="checkbox" name="data[filters][sentiment][slight_negative]" value="1" id="filtersSentimentSlightNegative" checked="checked" />                                        <img src="/img/marcel/sentiment_slight_negative.png" class="sentiment orig">                                    </label>
+                                    <label>
+                                        <input type="hidden" name="data[filters][sentiment][negative]" id="filtersSentimentNegative_" value="0" /><input type="checkbox" name="data[filters][sentiment][negative]" value="1" id="filtersSentimentNegative" checked="checked" />                                        <img src="/img/marcel/sentiment_negative.png" class="sentiment orig">                                    </label>
+                                </div>
+                                </form>                                <form class="clear" method="post" action="http://keyhole.co/monitor/streaming/KCzm12/hate/1" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div><input type="hidden" name="data[filters][clear]" value="1" id="filtersClear" /><button type="submit" class="clear_button" id="clear">Clear</button></form>                            </div>
+                            <!-- <div class="right">
+                                <div class="export">
+                                    <button id="update" class="export_link" rel="/KCzm12/influencers" data-trigger="click" data-placement="right" data-toggle="popover" data-html="true" data-content="">Export Data</button>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                                                                <table class="streaming">
+                            <thead>
+                                <tr role="row">
+                                    <th class="size details avatar sorting " data-field="username" ></th>
+                                    <th class="size details links sorting " data-field="username" >
+                                        User
+                                        <div class="sort">
+                                            <img src="/img/marcel/sort_both.png" class="sort">
+                                        </div>
+                                        <!-- <span class="popover-question" tabindex="0" data-toggle="popover" data-content="Sort table by Users" data-original-title="User">?</span> -->
+                                    </th>
+                                    <th class="sorting date sorted" data-field="created_at" data-order="desc">
+                                        Date
+                                        <div class="sort">
+                                            <img src="/img/marcel/sort_desc.png" class="sort">
+                                        </div>
+                                        <!-- <span class="popover-question" tabindex="0" data-toggle="popover" data-content="Sort table by Date" data-original-title="Date">?</span> -->
+                                    </th>
+                                    <th colspan="3" class="post">
+                                        Post
+                                    </th>
+                                    <th class="sorting state " data-field="state" >
+                                        Region
+                                        <div class="sort">
+                                            <img src="/img/marcel/sort_both.png" class="sort">
+                                        </div>
+                                        <!-- <span class="popover-question" tabindex="0" data-toggle="popover" data-content="Sort table by Regions" data-original-title="Region">?</span> -->
+                                    </th>
+                                    <th class="sorting country " data-field="country" >
+                                        Country
+                                        <div class="sort">
+                                            <img src="/img/marcel/sort_both.png" class="sort">
+                                        </div>
+                                       <!--  <span class="popover-question" tabindex="0" data-toggle="popover" data-content="Sort table by Countries" data-original-title="Country">?</span> -->
+                                    </th>
+                                    <th class="sorting total " data-field="total" >
+                                        RT/Likes
+                                        <div class="sort">
+                                            <img src="/img/marcel/sort_both.png" class="sort">
+                                        </div>
+                                        <!-- <span class="popover-question" tabindex="0" data-toggle="popover" data-content="Sort table by RT/Likes" data-original-title="RT/Likes">?</span> -->
+                                    </th>
+                                    <th class="sorting sentiment " tabindex="0" data-field="sentiment" >
+                                        Sentiment
+                                        <div class="sort">
+                                            <img src="/img/marcel/sort_both.png" class="sort">
+                                        </div>
+                                        <!-- <span class="popover-question" tabindex="0" data-toggle="popover" data-content="Sort table by Sentiments" data-original-title="Sentiment">?</span> -->
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                                                                                                                                <tr data-uid="789852341050740736">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/789134996955140096/g54n32Sl_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Tahir Mujtaba" class="full-name">Tahir Mujtaba</a>
+                                                <br>
+                                                <a title="Tahir Mujtaba" class="screen-name">
+                                                    <span class="screen-name">@Mtahirmujtaba</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:34 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="Mtahirmujtaba"
+                                                data-display-name="Tahir Mujtaba"
+                                                data-content-id="789852341050740736"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/789134996955140096/g54n32Sl_normal.jpg"
+                                                data-date="11:34 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789852341050740736"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789852341050740736"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/Mtahirmujtaba"
+                                                class="postdata">
+                                                <span>RT @AdilNajam: The #chemistry of #hate (via @calestous).
+This may be the greatest scientific rediscovery of 2016.Around the world.… </span>
+                                                <span class="mobile">RT @AdilNajam: The #chemistry of #hate (via @calestous).
+This may be the greatest scientific rediscovery of 2016.Around the world.… </span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo ">Pakistan</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_neutral.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789852341050740736" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="0.128" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit" checked value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789852051924721664">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/789606852455702528/iJzsVpIf_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="☥ The Ancient Ones ☥" class="full-name">☥ The Ancient Ones ☥</a>
+                                                <br>
+                                                <a title="☥ The Ancient Ones ☥" class="screen-name">
+                                                    <span class="screen-name">@TheAncientOnes9</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:32 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="TheAncientOnes9"
+                                                data-display-name="☥ The Ancient Ones ☥"
+                                                data-content-id="789852051924721664"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/789606852455702528/iJzsVpIf_normal.jpg"
+                                                data-date="11:32 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789852051924721664"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789852051924721664"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/TheAncientOnes9"
+                                                class="postdata">
+                                                <span>#NotSurprised #EmmettTill #Racism is Real but this is much more than that. It's #Hate ☝ https://t.co/FEMsMvFJBa</span>
+                                                <span class="mobile">#NotSurprised #EmmettTill #Racism is Real but this is much more than that. It's #Hate ☝ https://t.co/FEMsMvFJBa</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo "></td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789852051924721664" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.823" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit" checked value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789851649699381248">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/1285106062/Foto-0101_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="(((Jezabeliberté)))" class="full-name">(((Jezabeliberté)))</a>
+                                                <br>
+                                                <a title="(((Jezabeliberté)))" class="screen-name">
+                                                    <span class="screen-name">@Cable_Street</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:31 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="Cable_Street"
+                                                data-display-name="(((Jezabeliberté)))"
+                                                data-content-id="789851649699381248"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/1285106062/Foto-0101_normal.jpg"
+                                                data-date="11:31 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789851649699381248"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789851649699381248"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/Cable_Street"
+                                                class="postdata">
+                                                <span>"Make #America #hate again!" @RealDonaldTrump #Trump #DonaldTrump</span>
+                                                <span class="mobile">"Make #America #hate again!" @RealDonaldTrump #Trump #DonaldTrump</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo "></td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789851649699381248" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.611" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit" checked value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789851128808738816">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/758710720275947521/-wrVO_v__normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Amit_MRA" class="full-name">Amit_MRA</a>
+                                                <br>
+                                                <a title="Amit_MRA" class="screen-name">
+                                                    <span class="screen-name">@amit_mra</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:29 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="amit_mra"
+                                                data-display-name="Amit_MRA"
+                                                data-content-id="789851128808738816"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/758710720275947521/-wrVO_v__normal.jpg"
+                                                data-date="11:29 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789851128808738816"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789851128808738816"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/amit_mra"
+                                                class="postdata">
+                                                <span>RT @mensrightsrdt: #mensrights@reddit Heat St: "Rolling Stone UVA ‘Fake Rape’ Story Defamation Trial Gets Ugl... https://t.co/NeS5I1O25U #F…</span>
+                                                <span class="mobile">RT @mensrightsrdt: #mensrights@reddit Heat St: "Rolling Stone UVA ‘Fake Rape’ Story Defamation Trial Gets Ugl... https://t.co/NeS5I1O25U #F…</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo "></td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789851128808738816" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.910" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit" checked value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789850965293797376">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/788757569032642560/F9mhajDl_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="EmptyPlace" class="full-name">EmptyPlace</a>
+                                                <br>
+                                                <a title="EmptyPlace" class="screen-name">
+                                                    <span class="screen-name">@guitar069</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:28 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="guitar069"
+                                                data-display-name="EmptyPlace"
+                                                data-content-id="789850965293797376"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/788757569032642560/F9mhajDl_normal.jpg"
+                                                data-date="11:28 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789850965293797376"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789850965293797376"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/guitar069"
+                                                class="postdata">
+                                                <span>Когда закончится этот круг бесконечно повторяющихся одинаковых дней? #HATE</span>
+                                                <span class="mobile">Когда закончится этот круг бесконечно повторяющихся одинаковых дней? #HATE</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo "></td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789850965293797376" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.572" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit" checked value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789850637118935041">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/757081966353211392/ZwqIF7UT_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Mar" class="full-name">Mar</a>
+                                                <br>
+                                                <a title="Mar" class="screen-name">
+                                                    <span class="screen-name">@amari_iman</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:27 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="amari_iman"
+                                                data-display-name="Mar"
+                                                data-content-id="789850637118935041"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/757081966353211392/ZwqIF7UT_normal.jpg"
+                                                data-date="11:27 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789850637118935041"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789850637118935041"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/amari_iman"
+                                                class="postdata">
+                                                <span>RT @nick_chmura: Trump signs are 2016s Confederate flag. #racism #hate #division</span>
+                                                <span class="mobile">RT @nick_chmura: Trump signs are 2016s Confederate flag. #racism #hate #division</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo "></td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789850637118935041" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.832" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit" checked value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789850601970626560">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/770636293466386432/hOrPonjU_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Michael K. Brodie" class="full-name">Michael K. Brodie</a>
+                                                <br>
+                                                <a title="Michael K. Brodie" class="screen-name">
+                                                    <span class="screen-name">@NukpanaGentry</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:27 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="NukpanaGentry"
+                                                data-display-name="Michael K. Brodie"
+                                                data-content-id="789850601970626560"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/770636293466386432/hOrPonjU_normal.jpg"
+                                                data-date="11:27 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789850601970626560"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789850601970626560"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/NukpanaGentry"
+                                                class="postdata">
+                                                <span>Why is it so much easier to #Hate than #Love? Takes personal investment to Love. Anyone can choose to Hate and requires less of self? tcot</span>
+                                                <span class="mobile">Why is it so much easier to #Hate than #Love? Takes personal investment to Love. Anyone can choose to Hate and requires less of self? tcot</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo ">United States</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789850601970626560" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="0.664" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit" checked value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789850578918731776">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/709432354306138112/zHAr2sJl_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="KODONN KING PHARAOH" class="full-name">KODONN KING PHARAOH</a>
+                                                <br>
+                                                <a title="KODONN KING PHARAOH" class="screen-name">
+                                                    <span class="screen-name">@yolocestlavie</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:27 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="yolocestlavie"
+                                                data-display-name="KODONN KING PHARAOH"
+                                                data-content-id="789850578918731776"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/709432354306138112/zHAr2sJl_normal.jpg"
+                                                data-date="11:27 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789850578918731776"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789850578918731776"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/yolocestlavie"
+                                                class="postdata">
+                                                <span>#LOVE MAKE U #RICH
+#HATE MAKES #WAR 
+#KSTAYHUMBLE_💯1k https://t.co/BAUDzMIaiw</span>
+                                                <span class="mobile">#LOVE MAKE U #RICH
+#HATE MAKES #WAR 
+#KSTAYHUMBLE_💯1k https://t.co/BAUDzMIaiw</span>
+                                            </td>
+                                            <td class="geo ">FL</td>
+                                            <td class="geo ">United States</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_neutral.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789850578918731776" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="0.052" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit" checked value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789850373800407045">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/1240308761/mrlgo_normal.png" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Mensrights reddits" class="full-name">Mensrights reddits</a>
+                                                <br>
+                                                <a title="Mensrights reddits" class="screen-name">
+                                                    <span class="screen-name">@mensrightsrdt</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:26 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="mensrightsrdt"
+                                                data-display-name="Mensrights reddits"
+                                                data-content-id="789850373800407045"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/1240308761/mrlgo_normal.png"
+                                                data-date="11:26 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789850373800407045"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789850373800407045"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/mensrightsrdt"
+                                                class="postdata">
+                                                <span>#mensrights@reddit Man tells story of his ex-wife getting no charges for molesting their c... https://t.co/P6E2X8pb2G #Feminism is #HATE</span>
+                                                <span class="mobile">#mensrights@reddit Man tells story of his ex-wife getting no charges for molesting their c... https://t.co/P6E2X8pb2G #Feminism is #HATE</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo "></td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789850373800407045" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.896" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit" checked value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789850372244246528">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/1240308761/mrlgo_normal.png" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Mensrights reddits" class="full-name">Mensrights reddits</a>
+                                                <br>
+                                                <a title="Mensrights reddits" class="screen-name">
+                                                    <span class="screen-name">@mensrightsrdt</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:26 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="mensrightsrdt"
+                                                data-display-name="Mensrights reddits"
+                                                data-content-id="789850372244246528"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/1240308761/mrlgo_normal.png"
+                                                data-date="11:26 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789850372244246528"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789850372244246528"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/mensrightsrdt"
+                                                class="postdata">
+                                                <span>#mensrights@reddit Flashback: Carl the Cuck and AIDS Skrillex:       submitted by    /u/il... https://t.co/ZUyFXHOFTX #Feminism is #HATE</span>
+                                                <span class="mobile">#mensrights@reddit Flashback: Carl the Cuck and AIDS Skrillex:       submitted by    /u/il... https://t.co/ZUyFXHOFTX #Feminism is #HATE</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo "></td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789850372244246528" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.572" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit" checked value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789849060882673664">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/718005033397305344/HoJJoGN2_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="ihtesham" class="full-name">ihtesham</a>
+                                                <br>
+                                                <a title="ihtesham" class="screen-name">
+                                                    <span class="screen-name">@ihtesham_90</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:21 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="ihtesham_90"
+                                                data-display-name="ihtesham"
+                                                data-content-id="789849060882673664"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/718005033397305344/HoJJoGN2_normal.jpg"
+                                                data-date="11:21 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789849060882673664"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789849060882673664"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/ihtesham_90"
+                                                class="postdata">
+                                                <span>RT @Muhsin_Hasan: How #chemistry of #hate is perpetuated! https://t.co/SB10JouLAE</span>
+                                                <span class="mobile">RT @Muhsin_Hasan: How #chemistry of #hate is perpetuated! https://t.co/SB10JouLAE</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo ">Germany</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789849060882673664" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.611" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit" checked value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789848412489412609">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/765330774266617856/0h-XvRjO_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Alice" class="full-name">Alice</a>
+                                                <br>
+                                                <a title="Alice" class="screen-name">
+                                                    <span class="screen-name">@AliceEReid</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:18 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="AliceEReid"
+                                                data-display-name="Alice"
+                                                data-content-id="789848412489412609"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/765330774266617856/0h-XvRjO_normal.jpg"
+                                                data-date="11:18 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789848412489412609"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789848412489412609"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/AliceEReid"
+                                                class="postdata">
+                                                <span>#mentalhealth #hate at its worst is being called 'spastic' and 'insane' by someone who has with anxiety-Why can't people be #nice to others?</span>
+                                                <span class="mobile">#mentalhealth #hate at its worst is being called 'spastic' and 'insane' by someone who has with anxiety-Why can't people be #nice to others?</span>
+                                            </td>
+                                            <td class="geo ">NY</td>
+                                            <td class="geo ">United States</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789848412489412609" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.879" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit" checked value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789847939413790721">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/740935585280315393/16qPpc4U_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Robert Goos" class="full-name">Robert Goos</a>
+                                                <br>
+                                                <a title="Robert Goos" class="screen-name">
+                                                    <span class="screen-name">@RobertGoosBooks</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:16 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="RobertGoosBooks"
+                                                data-display-name="Robert Goos"
+                                                data-content-id="789847939413790721"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/740935585280315393/16qPpc4U_normal.jpg"
+                                                data-date="11:16 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789847939413790721"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789847939413790721"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/RobertGoosBooks"
+                                                class="postdata">
+                                                <span>RT @tatn: Fight #hate #racism #xenophobia ... https://t.co/AAAWlDrgJi</span>
+                                                <span class="mobile">RT @tatn: Fight #hate #racism #xenophobia ... https://t.co/AAAWlDrgJi</span>
+                                            </td>
+                                            <td class="geo ">CO</td>
+                                            <td class="geo ">United States</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789847939413790721" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.886" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit" checked value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789847763395633152">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/469297684726042624/i3uZ9rnK_normal.jpeg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="hatter" class="full-name">hatter</a>
+                                                <br>
+                                                <a title="hatter" class="screen-name">
+                                                    <span class="screen-name">@Rss_Hate</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:15 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="Rss_Hate"
+                                                data-display-name="hatter"
+                                                data-content-id="789847763395633152"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/469297684726042624/i3uZ9rnK_normal.jpeg"
+                                                data-date="11:15 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789847763395633152"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789847763395633152"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/Rss_Hate"
+                                                class="postdata">
+                                                <span>#Hate Trump and Clinton in dead heat among Georgia voters: Donald Trump and Hillary Clinton in a statistical ... https://t.co/vAyZB14AR0</span>
+                                                <span class="mobile">#Hate Trump and Clinton in dead heat among Georgia voters: Donald Trump and Hillary Clinton in a statistical ... https://t.co/vAyZB14AR0</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo "></td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789847763395633152" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.840" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit" checked value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789847712787234817">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/745965808656973824/wmPLcBx1_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="AndroidRadioSweden" class="full-name">AndroidRadioSweden</a>
+                                                <br>
+                                                <a title="AndroidRadioSweden" class="screen-name">
+                                                    <span class="screen-name">@AndrRadioSweden</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:15 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="AndrRadioSweden"
+                                                data-display-name="AndroidRadioSweden"
+                                                data-content-id="789847712787234817"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/745965808656973824/wmPLcBx1_normal.jpg"
+                                                data-date="11:15 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789847712787234817"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789847712787234817"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/AndrRadioSweden"
+                                                class="postdata">
+                                                <span>#hate #selfienation #producer #goldenretriever #ballet https://t.co/3rKM9IJkIp 7318</span>
+                                                <span class="mobile">#hate #selfienation #producer #goldenretriever #ballet https://t.co/3rKM9IJkIp 7318</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo ">Morocco</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789847712787234817" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.572" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit" checked value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789847405181169664">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/763826200829685760/fLh4Dw4e_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Bryan Oten" class="full-name">Bryan Oten</a>
+                                                <br>
+                                                <a title="Bryan Oten" class="screen-name">
+                                                    <span class="screen-name">@Path2Nlitnmnt</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:14 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="Path2Nlitnmnt"
+                                                data-display-name="Bryan Oten"
+                                                data-content-id="789847405181169664"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/763826200829685760/fLh4Dw4e_normal.jpg"
+                                                data-date="11:14 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link="https://pbs.twimg.com/media/CvYaBeLXYAQf0Fp.jpg"
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789847405181169664"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789847405181169664"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/Path2Nlitnmnt"
+                                                class="postdata">
+                                                <span>#Trump #GOP # Authoritarian #HATE #America #Constitution #diversity #justice #BillofRights #BLM https://t.co/7JLDdsvVqT</span>
+                                                <span class="mobile">#Trump #GOP # Authoritarian #HATE #America #Constitution #diversity #justice #BillofRights #BLM https://t.co/7JLDdsvVqT</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo ">United States</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_neutral.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789847405181169664" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.077" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit" checked value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789846747526856704">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/378800000580431211/9566cf95e456276d97e38ed97b90b46d_normal.jpeg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="PLATANOTV" class="full-name">PLATANOTV</a>
+                                                <br>
+                                                <a title="PLATANOTV" class="screen-name">
+                                                    <span class="screen-name">@PLATANOTV</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:11 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="PLATANOTV"
+                                                data-display-name="PLATANOTV"
+                                                data-content-id="789846747526856704"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/378800000580431211/9566cf95e456276d97e38ed97b90b46d_normal.jpeg"
+                                                data-date="11:11 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789846747526856704"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789846747526856704"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/PLATANOTV"
+                                                class="postdata">
+                                                <span>MORE #LOVE AND LESS #HATE</span>
+                                                <span class="mobile">MORE #LOVE AND LESS #HATE</span>
+                                            </td>
+                                            <td class="geo ">NY</td>
+                                            <td class="geo ">United States</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_neutral.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789846747526856704" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="0.270" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit" checked value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789846703532806144">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/3550245627/156d91539a11a6c068bb732042ad94e2_normal.jpeg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Herb Reavis Jr" class="full-name">Herb Reavis Jr</a>
+                                                <br>
+                                                <a title="Herb Reavis Jr" class="screen-name">
+                                                    <span class="screen-name">@ReavisJr</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:11 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="ReavisJr"
+                                                data-display-name="Herb Reavis Jr"
+                                                data-content-id="789846703532806144"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/3550245627/156d91539a11a6c068bb732042ad94e2_normal.jpeg"
+                                                data-date="11:11 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789846703532806144"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789846703532806144"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/ReavisJr"
+                                                class="postdata">
+                                                <span>RT @NJBCTV: A timely message for today,, "How to Handle Hate" Sunday @ 10:45 AM. #hate #society #love #NowPlaying #life https://t.co/0nEzbl…</span>
+                                                <span class="mobile">RT @NJBCTV: A timely message for today,, "How to Handle Hate" Sunday @ 10:45 AM. #hate #society #love #NowPlaying #life https://t.co/0nEzbl…</span>
+                                            </td>
+                                            <td class="geo ">FL</td>
+                                            <td class="geo ">United States</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789846703532806144" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.494" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit" checked value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789846282135363584">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/745179508630687745/u8G0vUNi_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="AndroidRadioSpain" class="full-name">AndroidRadioSpain</a>
+                                                <br>
+                                                <a title="AndroidRadioSpain" class="screen-name">
+                                                    <span class="screen-name">@AndroRadioSpain</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:10 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="AndroRadioSpain"
+                                                data-display-name="AndroidRadioSpain"
+                                                data-content-id="789846282135363584"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/745179508630687745/u8G0vUNi_normal.jpg"
+                                                data-date="11:10 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789846282135363584"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789846282135363584"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/AndroRadioSpain"
+                                                class="postdata">
+                                                <span>#hate #selfienation #producer #goldenretriever #ballet https://t.co/qHX0OPZQtU 7318</span>
+                                                <span class="mobile">#hate #selfienation #producer #goldenretriever #ballet https://t.co/qHX0OPZQtU 7318</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo ">Morocco</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789846282135363584" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.572" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit" checked value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789845464011026432">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/777226824359129092/yf3VtZ-F_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="(((Rational Human)))" class="full-name">(((Rational Human)))</a>
+                                                <br>
+                                                <a title="(((Rational Human)))" class="screen-name">
+                                                    <span class="screen-name">@caliwaterman</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:06 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="caliwaterman"
+                                                data-display-name="(((Rational Human)))"
+                                                data-content-id="789845464011026432"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/777226824359129092/yf3VtZ-F_normal.jpg"
+                                                data-date="11:06 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789845464011026432"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789845464011026432"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/caliwaterman"
+                                                class="postdata">
+                                                <span>RT @SojournerNow: #TrumpTrain @realDonaldTrump . Making America #hate again.  If we don't recognize the hate of the past, it will com… </span>
+                                                <span class="mobile">RT @SojournerNow: #TrumpTrain @realDonaldTrump . Making America #hate again.  If we don't recognize the hate of the past, it will com… </span>
+                                            </td>
+                                            <td class="geo ">CA</td>
+                                            <td class="geo ">United States</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789845464011026432" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.813" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit" checked value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789845418293080064">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/738526376962056193/x3HAnsZE_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Jewminatti" class="full-name">Jewminatti</a>
+                                                <br>
+                                                <a title="Jewminatti" class="screen-name">
+                                                    <span class="screen-name">@Jewminatti</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:06 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="Jewminatti"
+                                                data-display-name="Jewminatti"
+                                                data-content-id="789845418293080064"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/738526376962056193/x3HAnsZE_normal.jpg"
+                                                data-date="11:06 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789845418293080064"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789845418293080064"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/Jewminatti"
+                                                class="postdata">
+                                                <span>#Quote "I'm #blessed NOT to #hate anyone....Nor have ANY #haters of Myself...." ~@Caligraphy215 of #Jewminatti</span>
+                                                <span class="mobile">#Quote "I'm #blessed NOT to #hate anyone....Nor have ANY #haters of Myself...." ~@Caligraphy215 of #Jewminatti</span>
+                                            </td>
+                                            <td class="geo ">CA</td>
+                                            <td class="geo ">United States</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789845418293080064" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="0.572" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit" checked value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789845231311216640">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/749117022932316160/zkxkjppS_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="I luv being Teamster" class="full-name">I luv being Teamster</a>
+                                                <br>
+                                                <a title="I luv being Teamster" class="screen-name">
+                                                    <span class="screen-name">@JimKilbane</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:05 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="JimKilbane"
+                                                data-display-name="I luv being Teamster"
+                                                data-content-id="789845231311216640"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/749117022932316160/zkxkjppS_normal.jpg"
+                                                data-date="11:05 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789845231311216640"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789845231311216640"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/JimKilbane"
+                                                class="postdata">
+                                                <span>@Cleve216822 He's 8years old. He has seen so much #hate from this whole #trump campaign that was his verbatim words. I can't wait till over</span>
+                                                <span class="mobile">@Cleve216822 He's 8years old. He has seen so much #hate from this whole #trump campaign that was his verbatim words. I can't wait till over</span>
+                                            </td>
+                                            <td class="geo ">OH</td>
+                                            <td class="geo ">United States</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789845231311216640" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.610" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit" checked value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789844948711604224">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/623149380896485376/pCV-zpmd_normal.jpg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Nesrine khlifi" class="full-name">Nesrine khlifi</a>
+                                                <br>
+                                                <a title="Nesrine khlifi" class="screen-name">
+                                                    <span class="screen-name">@Nes73N</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:04 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="Nes73N"
+                                                data-display-name="Nesrine khlifi"
+                                                data-content-id="789844948711604224"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/623149380896485376/pCV-zpmd_normal.jpg"
+                                                data-date="11:04 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789844948711604224"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789844948711604224"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/Nes73N"
+                                                class="postdata">
+                                                <span>ما اتعسنا.. حين نضيع وقتنا في إعطاء شخص ما فرصته الثانية، بينما هناك من هو افضل منه ينتظر فرصته الأولى.
+#hate u my ex :D 😯</span>
+                                                <span class="mobile">ما اتعسنا.. حين نضيع وقتنا في إعطاء شخص ما فرصته الثانية، بينما هناك من هو افضل منه ينتظر فرصته الأولى.
+#hate u my ex :...</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo "></td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_neutral.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789844948711604224" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.103" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit" checked value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789844571719172096">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://pbs.twimg.com/profile_images/2349737651/796oh9xnamtey0wqe8jp_normal.jpeg" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Consumer-Rumor" class="full-name">Consumer-Rumor</a>
+                                                <br>
+                                                <a title="Consumer-Rumor" class="screen-name">
+                                                    <span class="screen-name">@ConsumerRumor</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:03 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="ConsumerRumor"
+                                                data-display-name="Consumer-Rumor"
+                                                data-content-id="789844571719172096"
+                                                data-profile-image-url="https://pbs.twimg.com/profile_images/2349737651/796oh9xnamtey0wqe8jp_normal.jpeg"
+                                                data-date="11:03 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link="https://pbs.twimg.com/media/CvX4TvhXYAAddmu.jpg"
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789844571719172096"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789844571719172096"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/ConsumerRumor"
+                                                class="postdata">
+                                                <span>RT @SojournerNow: #TrumpTrain @realDonaldTrump . Making America #hate again. https://t.co/cqOIjh7gtY</span>
+                                                <span class="mobile">RT @SojournerNow: #TrumpTrain @realDonaldTrump . Making America #hate again. https://t.co/cqOIjh7gtY</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo ">Australia</td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789844571719172096" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.572" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit"  value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit" checked value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                                                                                                    <tr data-uid="789844541780230145">
+                                            <td class="avatar ">
+                                                <img class="media-object" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png" onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+                                                <div class="platform-img"><img src="/img/marcel/twitter.png"></div>
+                                            </td>
+                                            <td class="details ">
+                                                <a title="Andy Lee" class="full-name">Andy Lee</a>
+                                                <br>
+                                                <a title="Andy Lee" class="screen-name">
+                                                    <span class="screen-name">@FunnygirlLee</span>
+                                                </a>
+                                            </td>
+                                            <td class="date sorted">
+                                                <div class="main">Oct 22, 2016</div>
+                                                <div>11:03 AM</div>
+                                            </td>
+                                            <td colspan="3"
+                                                data-platform="Twitter"
+                                                data-screen-name="FunnygirlLee"
+                                                data-display-name="Andy Lee"
+                                                data-content-id="789844541780230145"
+                                                data-profile-image-url="https://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png"
+                                                data-date="11:03 AM - 22 Oct 2016"
+                                                data-total="0"
+                                                data-image-link=""
+                                                data-like-route="http://keyhole.co/oauth/twitterLike/789844541780230145"
+                                                data-retweet-route="http://keyhole.co/oauth/twitterRetweet/789844541780230145"
+                                                data-follow-route="http://keyhole.co/oauth/twitterFollow/FunnygirlLee"
+                                                class="postdata">
+                                                <span>RT @FreshPhunky: Ivanka @IvankaTrump says she supports #WomenWhoWork but stands by the #misogyny #hate and racism of #TrumpPence2016 . #Boy…</span>
+                                                <span class="mobile">RT @FreshPhunky: Ivanka @IvankaTrump says she supports #WomenWhoWork but stands by the #misogyny #hate and racism of #TrumpPence2016 . #Boy…</span>
+                                            </td>
+                                            <td class="geo "></td>
+                                            <td class="geo "></td>
+                                            <td class="number total ">0</td>
+                                            <td class="sentiment "><img src="/img/marcel/sentiment_negative.png" class="sentiment orig">												<div class="popover-markup" style="display:inline">
+												    <a href="javascript:void(0);" class="trigger poptip_edit_sentiment"><img class="show_popup" src="/img/marcel/edit_sentiment.png"/></a>
+												    <div class="head hide">Edit Sentiment<span style="float:right;"><a href="javascript:void(0);" onclick="$('.popover-markup>.trigger').popover('hide')"><img src="/img/marcel/close.png" width="12"></a></span></div>
+												    <div class="content hide">
+														<form class="save_sentiment" method="post" action="/" onsubmit="return false;">
+												        <div class="form-group">
+															
+		<input type="hidden" name="data[platform]" value="Twitter" />
+		<input type="hidden" name="data[post_id]" value="789844541780230145" />
+		<input type="hidden" name="data[hash]" value="KCzm12" />
+		<input type="hidden" name="data[old_value]" value="-0.899" />
+		<input type="hidden" name="data[new_value]" value="" />
+			<button class="sntmt_submit" type="submit" checked value="-1"><img src="/img/marcel/sentiment_negative.png" class="sentiment_-1"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="-0.5" ><img src="/img/marcel/sentiment_slight_negative.png" class="sentiment_-0.5"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0" ><img src="/img/marcel/sentiment_neutral.png" class="sentiment_0"></button>&nbsp;
+			<button class="sntmt_submit"  type="submit"  value="0.5" ><img src="/img/marcel/sentiment_slight_positive.png" class="sentiment_0.5"></button>&nbsp;
+			<button class="sntmt_submit" type="submit"  value="1" ><img src="/img/marcel/sentiment_positive.png" class="sentiment_1"></button>												        </div>
+														<br />
+														<img class="date-loader" src="/img/ajax-loader-date.gif" style="display:none;" />&nbsp;<span class="edit_status" style="display:none;">Updating...</span>
+														</form>
+												    </div>
+												</div>
+											</td>
+                                        </tr>
+                                                                                                </tbody>
+                        </table>
+                        <div class="datatables-pagination">
+                            <div class="span6">
+                                <div class="dataTables_info" id="inf_table_info">
+                                    Showing 1 to 25 of 911 posts                                </div>
+                            </div>
+                            <div class="span6">
+                                <div class="dataTables_paginate paging_bootstrap pagination">
+                                    <ul>
+                                        <li class="active"><a href="/monitor/streaming/KCzm12/hate/1" class="">1</a></li><li class=""><a href="/monitor/streaming/KCzm12/hate/2" class="">2</a></li><li class=""><a href="/monitor/streaming/KCzm12/hate/3" class="">3</a></li><li class=""><a href="/monitor/streaming/KCzm12/hate/4" class="">4</a></li><li class=""><a href="/monitor/streaming/KCzm12/hate/5" class="">5</a></li><li><a href="/monitor/streaming/KCzm12/hate/37">37</a></li><li class="next"><a href="/monitor/streaming/KCzm12/hate/2" class="">NEXT</a></li>                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="post_lightbox_overlay"></div>
+<div id="post_lightbox">
+    <div class="close"></div>
+    <div class="user-info clear-fix">
+        <div class="avatar">
+            <a target="_blank" class="profile">
+                <img onerror="this.onerror=null;this.src='/img/spacer-frame.png';"  class="avatar">
+            </a>
+            <img class="platform-img">
+        </div>
+        <div class="details">
+            <div class="name">
+                <a target="_blank" class="profile"></a>
+            </div>
+            <div class="username">
+                <a target="_blank" class="profile"></a>
+            </div>
+        </div>
+        <div class="follow twitter">
+            <button
+								                                     class="popover-info" data-content="<a href='https://api.twitter.com/oauth/authenticate?force_login=1&oauth_token=YjeJ1gAAAAAAOuB3AAABV-0JnPM&screen_name='>Connect with Twitter to follow</a>"                                 >
+                follow
+            </button>
+        </div>
+        <div class="follow instagram">
+            <button
+                                     class="popover-info" data-content="<a class='instagram_add' href='https://api.instagram.com/oauth/authorize?client_id=57d429b2128b466da74a04480b2a0293&redirect_uri=http%3A%2F%2Fkeyhole.co%2Foauth%2Fauthenticate-user-instagram-callback%3Froute%3Dhttp%253A%252F%252Fkeyhole.co%252Fmonitor%252Fstreaming%252FKCzm12%252Fhate%252F1&scope=basic+comments+public_content+follower_list+likes+relationships&response_type=code'>Connect with Instagram to follow</a>"                                 >
+                follow
+            </button>
+        </div>
+        <div class="error"></div>
+        <div class="oauth_info">
+            <div class="twitter">
+                                    <div class="login">
+                        <a href="https://api.twitter.com/oauth/authenticate?force_login=1&oauth_token=YjeJ1gAAAAAAOuB3AAABV-0JnPM&screen_name=">Have a Twitter account?<br>Log in to interact</a>
+                    </div>
+                            </div>
+            <div class="instagram">
+                                    <div class="login">
+                        <a class="instagram_add" href="https://api.instagram.com/oauth/authorize?client_id=57d429b2128b466da74a04480b2a0293&redirect_uri=http%3A%2F%2Fkeyhole.co%2Foauth%2Fauthenticate-user-instagram-callback%3Froute%3Dhttp%253A%252F%252Fkeyhole.co%252Fmonitor%252Fstreaming%252FKCzm12%252Fhate%252F1&scope=basic+comments+public_content+follower_list+likes+relationships&response_type=code">Have a Instagram account?<br>Log in to interact</a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <div class="post-info">
+        <div class="post-text"></div>
+        <div class="post-image">
+            <a target="_blank" class="status">
+                <img onerror="this.onerror=null;this.src='/img/spacer-frame.png';">
+            </a>
+        </div>
+        <div class="post-details">
+            <div class="interacts twitter">
+                <div class="reply">
+                    <img src="/img/marcel/reply-icon.png" tabindex="0" title="Reply to this tweet"
+                                                     class="popover-info" data-content="<a href='https://api.twitter.com/oauth/authenticate?force_login=1&oauth_token=YjeJ1gAAAAAAOuB3AAABV-0JnPM&screen_name='>Connect with Twitter to reply</a>"                                             >
+                </div>
+                <div class="like">
+                    <img src="/img/marcel/like-icon.png" tabindex="0" title="Like this tweet"
+                                                     class="popover-info" data-content="<a href='https://api.twitter.com/oauth/authenticate?force_login=1&oauth_token=YjeJ1gAAAAAAOuB3AAABV-0JnPM&screen_name='>Connect with Twitter to like</a>"                                             >
+                </div>
+                <div class="retweet">
+                    <img src="/img/marcel/retweet-icon.png" tabindex="0" title="Retweet this post"
+                                                 class="popover-info" data-content="<a href='https://api.twitter.com/oauth/authenticate?force_login=1&oauth_token=YjeJ1gAAAAAAOuB3AAABV-0JnPM&screen_name='>Connect with Twitter to retweet</a>"                                                 >
+                    <div class="count"></div>
+                </div>
+                            </div>
+            <div class="interacts instagram">
+                <div class="reply">
+                    <img src="/img/marcel/reply-icon.png" tabindex="0" title="Reply to this post"
+                                                     class="popover-info" data-content="<a class='instagram_add' href='https://api.instagram.com/oauth/authorize?client_id=57d429b2128b466da74a04480b2a0293&redirect_uri=http%3A%2F%2Fkeyhole.co%2Foauth%2Fauthenticate-user-instagram-callback%3Froute%3Dhttp%253A%252F%252Fkeyhole.co%252Fmonitor%252Fstreaming%252FKCzm12%252Fhate%252F1&scope=basic+comments+public_content+follower_list+likes+relationships&response_type=code'>Connect with Instagram to reply</a>"                                             >
+                </div>
+                <div class="like">
+                    <img src="/img/marcel/like-icon.png" tabindex="0" title="Like this post"
+                                                     class="popover-info" data-content="<a class='instagram_add' href='https://api.instagram.com/oauth/authorize?client_id=57d429b2128b466da74a04480b2a0293&redirect_uri=http%3A%2F%2Fkeyhole.co%2Foauth%2Fauthenticate-user-instagram-callback%3Froute%3Dhttp%253A%252F%252Fkeyhole.co%252Fmonitor%252Fstreaming%252FKCzm12%252Fhate%252F1&scope=basic+comments+public_content+follower_list+likes+relationships&response_type=code'>Connect with Instagram to like</a>"                                             >
+                </div>
+                            </div>
+            <div class="link">
+                <a target="_blank" class="status">
+                    <img src="/img/marcel/link2-icon.png" tabindex="0" title="Link to this post" >
+                </a>
+            </div>
+            <div class="date">
+                <a target="_blank" class="status"></a>
+            </div>
+            <div class="success"></div>
+            <div class="error"></div>
+        </div>
+        <div class="post-reply twitter">
+            <form method="post" action="http://keyhole.co/oauth/twitter/reply" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div><input type="hidden" name="data[reply][tweet_id]" id="replyTweetId" /><textarea name="data[reply][tweet_content]" maxlength="140" cols="30" rows="6" id="replyTweetContent" ></textarea><button type="submit">Reply</button></form>        </div>
+        <div class="post-reply instagram">
+            <form method="post" action="http://keyhole.co/oauth/instagram/reply" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div><input type="hidden" name="data[reply][instagram_id]" id="replyInstagramId" /><textarea name="data[reply][instagram_content]" cols="30" rows="6" id="replyInstagramContent" ></textarea><button type="submit">Comment</button></form>        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/js/jquery.datetimepicker.js?1470252017"></script>
+<script type="text/javascript" src="/build/js/2-pages/hashtag-tracking/streaming/streaming.js?1476909075"></script>
+
+    <!-- <nope= $this->element('footer'); ?> -->
+    <style>
+  #keyhole-footer {
+  background-color: #34495e;
+  height: auto;
+  overflow: auto;
+  padding: 0;
+  position: relative;
+  z-index: 2; }
+  #keyhole-footer.texture {
+    background-color: #34495e; }
+    #keyhole-footer.texture:before, #keyhole-footer.texture:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.3;
+      z-index: -1; }
+    #keyhole-footer.texture:before {
+      background-image: url(/img/texture.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom; }
+    #keyhole-footer.texture:after {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(52, 73, 94, 0.3)), to(rgba(0, 0, 0, 0.2)));
+      background: -webkit-linear-gradient(rgba(52, 73, 94, 0.3), rgba(0, 0, 0, 0.2));
+      background: linear-gradient(rgba(52, 73, 94, 0.3), rgba(0, 0, 0, 0.2)); }
+  #keyhole-footer .footer-container {
+    padding: 40px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Roboto',arial,sans-serif; }
+    #keyhole-footer .footer-container > div {
+      max-width: 275px;
+      min-width: 275px;
+      min-height: 250px;
+      margin: 2px; }
+      #keyhole-footer .footer-container > div .wrapper {
+        padding: 15px; }
+        #keyhole-footer .footer-container > div .wrapper a, #keyhole-footer .footer-container > div .wrapper a:link, #keyhole-footer .footer-container > div .wrapper a:active, #keyhole-footer .footer-container > div .wrapper a:visited, #keyhole-footer .footer-container > div .wrapper a:hover {
+          cursor: pointer;
+          color: white;
+          display: block;
+          margin: 10px auto 0;
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 20px; }
+          #keyhole-footer .footer-container > div .wrapper a b, #keyhole-footer .footer-container > div .wrapper a:link b, #keyhole-footer .footer-container > div .wrapper a:active b, #keyhole-footer .footer-container > div .wrapper a:visited b, #keyhole-footer .footer-container > div .wrapper a:hover b {
+            font-weight: 700; }
+        #keyhole-footer .footer-container > div .wrapper h3 {
+          cursor: default;
+          color: white;
+          margin-top: 0px;
+          margin-bottom: 10px;
+          font-size: 26px;
+          font-weight: 500; }
+        #keyhole-footer .footer-container > div .wrapper #why-keyhole-wrapper {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          display: -webkit-flex;
+          width: 100%;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-flex-wrap: wrap; }
+          #keyhole-footer .footer-container > div .wrapper #why-keyhole-wrapper > a {
+            width: 50%; }
+        #keyhole-footer .footer-container > div .wrapper #why-keyhole {
+          cursor: pointer;
+          margin: 0; }
+          #keyhole-footer .footer-container > div .wrapper #why-keyhole h3 {
+            cursor: pointer; }
+      #keyhole-footer .footer-container > div#first h3:nth-of-type(2) {
+        margin-top: 24px; }
+      #keyhole-footer .footer-container > div#third {
+        position: relative; }
+        #keyhole-footer .footer-container > div#third span {
+          display: none;
+          font-family: 'Roboto',arial,sans-serif;
+          color: white; }
+          #keyhole-footer .footer-container > div#third span a {
+            display: inline; }
+            #keyhole-footer .footer-container > div#third span a i {
+              color: rgba(255, 255, 255, 0.7);
+              font-size: 35px;
+              margin-top: 10px;
+              margin-left: 9px;
+              -webkit-transition: 200ms ease-in-out;
+              transition: 200ms ease-in-out; }
+            #keyhole-footer .footer-container > div#third span a:hover i {
+              color: white; }
+        #keyhole-footer .footer-container > div#third #connectwithus {
+          color: white;
+          padding-left: 10px;
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 10px; }
+      #keyhole-footer .footer-container > div#fourth #help-title {
+        margin-top: 24px; }
+      @media only screen and (max-width: 572px) {
+        #keyhole-footer .footer-container > div#first {
+          -webkit-box-ordinal-group: 2;
+          -webkit-order: 1;
+              -ms-flex-order: 1;
+                  order: 1; }
+        #keyhole-footer .footer-container > div#second {
+          -webkit-box-ordinal-group: 3;
+          -webkit-order: 2;
+              -ms-flex-order: 2;
+                  order: 2; }
+        #keyhole-footer .footer-container > div#third {
+          -webkit-box-ordinal-group: 5;
+          -webkit-order: 4;
+              -ms-flex-order: 4;
+                  order: 4; }
+        #keyhole-footer .footer-container > div#fourth {
+          -webkit-box-ordinal-group: 4;
+          -webkit-order: 3;
+              -ms-flex-order: 3;
+                  order: 3; } }
+  @media only screen and (min-width: 853px) and (max-width: 1131px) {
+    #keyhole-footer .footer-container {
+      padding: 0 150px; } }
+  @media only screen and (min-width: 853px) and (max-width: 872px) {
+    #keyhole-footer .footer-container {
+      padding: 0 100px; } }
+  #keyhole-footer .bottom-footer-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em 2em;
+    background-color: rgba(0, 0, 0, 0.45); }
+    @media (max-width: 540px) {
+      #keyhole-footer .bottom-footer-container {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; } }
+    #keyhole-footer .bottom-footer-container p.copyright {
+      color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+      font-family: 'Roboto';
+      font-size: 0.9em;
+      font-weight: 500;
+      letter-spacing: 1px; }
+      @media (max-width: 540px) {
+        #keyhole-footer .bottom-footer-container p.copyright {
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 2em 0; } }
+    @media (max-width: 540px) {
+      #keyhole-footer .bottom-footer-container .social-icons {
+        width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    #keyhole-footer .bottom-footer-container .social-icons a {
+      color: rgba(255, 255, 255, 0.6);
+      margin-left: 0.25em;
+      text-decoration: none; }
+      @media (max-width: 540px) {
+        #keyhole-footer .bottom-footer-container .social-icons a {
+          margin: 0 0.5em 1em; } }
+      #keyhole-footer .bottom-footer-container .social-icons a:hover {
+        color: #fff; }
+</style>
+
+<footer id="keyhole-footer">
+  <div class="footer-container">
+    <div id="first">
+      <div class="wrapper">
+        <h3>Products</h3>
+        <a href="/hashtag-analytics">Hashtag &amp; Keyword Analytics</a>
+        <a href="/historical-data-feature">Historical Data Reports</a>
+        <a class="hidden" href="/account-analytics">Account Analytics Reporting</a>
+        <a href="/influencer-marketing-table">Influencer Marketing</a>
+        <a href="/facebook-analytics">Facebook Analytics</a>
+        <a href="/twitter-analytics">Twitter Analytics</a>
+        <a href="/instagram-analytics">Instagram Analytics</a>
+      </div>
+    </div>
+    <div id="second">
+      <div class="wrapper">
+        <h3>Industry Analytics</h3>
+        <a href="/industry/tech">Technology</a>
+        <a href="/industry/telecom">Telecommunications</a>
+        <a href="/industry/retail">Retail &amp; Fashion</a>
+        <a href="/industry/sports">Sports &amp; Recreation</a>
+        <a href="/industry/restaurant">Bars &amp; Restaurants</a>
+        <a href="/industry/travel-hospitality">Travel &amp; Hospitality</a>
+        <a href="/industry/finance-insurance">Finance &amp; Insurance</a>
+        <a href="/industry/research">Research &amp; Education</a>
+      </div>
+    </div>
+    <div id="third">
+      <div class="wrapper">
+        <h3>Company</h3>
+        <a href="http://keyhole.co/blog" target="_blank"><b>Blog</b></a>
+        <a href="/about-us">About Us</a>
+        <a href="/press">Press</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+        <a href="https://angel.co/keyhole-1/jobs" target="_blank"><b>We're Hiring!</b></a>
+      </div>
+      <!-- <p id="connectwithus">
+        Connect with us:
+      </p> -->
+      <span>
+        <a href="https://twitter.com/keyholeco" target="_blank">
+          <i class="fa fa-2x fa-twitter-square"></i>
+        </a>
+        <a href="https://www.facebook.com/keyholeco" target="_blank">
+          <i class="fa fa-2x fa-facebook-square"></i>
+        </a>
+        <a href="https://plus.google.com/u/0/+KeyholeCoSocial" target="_blank">
+          <i class="fa fa-2x fa-google-plus-square"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/keyhole-co" target="_blank">
+          <i class="fa fa-2x fa-linkedin-square"></i>
+        </a>
+      </span>
+    </div>
+    <div id="fourth">
+      <div class="wrapper">
+        <a href="/social-analytics-why" id="why-keyhole"><h3>Why Keyhole</h3></a>
+        <a href="/social-analytics-agencies">Agencies</a>
+        <a href="/social-analytics-executives">Executives</a>
+        <a href="/social-analytics-marketers">Marketers</a>
+        <a href="/social-analytics-journalists">Journalists</a>
+        <h3 id="help-title">Help</h3>
+        <a href="https://keyholeco.zendesk.com/hc/en-us" target="_blank">FAQ</a>
+        <a href="/contact-us">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-footer-container">
+    <p class="copyright">Copyright &copy; Keyhole 2016. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://twitter.com/keyholeco" target="_blank"><i class="fa fa-2x fa-twitter-square"></i></a>
+      <a href="https://www.facebook.com/keyholeco" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a>
+      <a href="https://plus.google.com/u/0/+KeyholeCoSocial" target="_blank"><i class="fa fa-2x fa-google-plus-square"></i></a>
+      <a href="https://www.linkedin.com/company/keyhole-co" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  $('#keyhole-footer a').each(function(e) {
+    $(this).attr('onclick', "_gaq.push(['_trackEvent', 'Footer Link', 'footer_link_click', '" + $(this).attr('href') + "'])");
+  });
+</script>
+
+		<script type="text/javascript">
+	        var _gaq = _gaq || [];
+	    </script>
+
+		<script>
+			$('.alert').hide().fadeIn();
+			if (_kmq) _kmq.push(['record', 'pageview', {'info/action': 'monitor/streaming/KCzm12/hate/1'}]);
+			function showTopBar(id, title, link) {
+				$('#topbar_title').html(title);
+				$('#slingdigital').attr('rel', id);
+				$('#topbar_link').attr('href', link);
+				$('#topbar_link').hide();
+				var hide_topbar = get_cookie('hide_topbar_'+id);
+				if (!hide_topbar) {
+					setTimeout(function(){
+						$("#slingdigital").animate({
+								'top': '0px'
+							}, { duration: 1000, queue: false });
+						$("#miniheader").animate({
+							'margin-top': '36px'
+						}, { duration: 1000, queue: false });
+					}, 2000);
+				}
+			}
+			$('#close_notify').click(function(){
+				var id = $('#slingdigital').attr('rel');
+				set_cookie('hide_topbar_'+id, true);
+				$("#slingdigital").animate({
+						'top': '-36px'
+					}, { duration: 1000, queue: false });
+				$("#miniheader").animate({
+					'margin-top': '0px'
+				}, { duration: 1000, queue: false });
+			});
+							setTimeout(function() {	showTopBar("get_free", "<a href='/referrals' style='color:#fff;'>Use Keyhole for FREE&nbsp;&raquo;&nbsp;Click Here</a>", "#") }, 3000);
+				$('#send_twitter2').hide();
+					</script>
+		<div id="last_day_dialog" class="modal hide fade" style="width:600px;" data-backdrop="static" data-keyboard="false">
+  <div class="modal-header">
+    <h3 style="font-family:helvetica, arial, sans-serif;font-weight:normal;font-size:22px;">Your trial is scheduled to expire today. Extend it to 7 days!</h3>
+  </div>
+  <div class="modal-body">
+	Tweet about how you're using Keyhole, and we'll extend your trial to 7 days. Enter your message below (including the #trykeyhole hashtag) and click the Share button:<br /><br />
+	<form style="text-align:right;">
+	  <fieldset>
+	    <textarea id="share_text_extend" rows="3" cols="20" style="width:560px;" placeholder="hello">Great tool for hashtag #analytics: http://keyhole.co/r/89bffd?utm_source=twitter&utm_medium=ext&utm_campaign=trykeyhole -- Using the @keyholeco free trial now. Have you? #trykeyhole</textarea>
+	    <br />
+		<button id="send_twitter_extend" class="btn"><img src="/img/twitter-bird-callout.png" height="14" alt="Spread the word"/>&nbsp;Share on Twitter</button>
+	  </fieldset>
+	</form>
+	<div style="clear: both;"></div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">No thanks</button>
+  </div>
+</div>
+<script>
+$('#send_twitter_extend').click(function() {
+	var t = $('#share_text_extend').val();
+	t = encodeURIComponent(t);
+	window.open("http://twitter.com/intent/tweet?text="+t);
+	$('#last_day_dialog').modal('hide');
+	set_cookie('extend_trial_hide', true);
+	return false;
+});
+$('#last_day_dialog').on('hidden.bs.modal', function () {
+	set_cookie('extend_trial_hide', true);
+});
+var extend_trial_hide = get_cookie('extend_trial_hide');
+if (!extend_trial_hide) {
+	}
+</script>		<script src="/build/js/0-libs/fclick.js?1476909060"></script>
+		<script src="/build/js/1-app/shared.js?1476909070"></script>
+					<script type="text/javascript">
+				var _cio = _cio || [];
+			    (function() {
+					var a,b,c;a=function(f){return function(){_cio.push([f].
+					concat(Array.prototype.slice.call(arguments,0)))}};b=["load","identify",
+					"sidentify","track","page"];for(c=0;c<b.length;c++){_cio[b[c]]=a(b[c])};
+					var t = document.createElement('script'),
+					  s = document.getElementsByTagName('script')[0];
+					t.async = true;
+					t.id    = 'cio-tracker';
+					t.setAttribute('data-site-id', '926a081c3e7a3685706c');
+					t.src = 'https://assets.customer.io/assets/track.js';
+					s.parentNode.insertBefore(t, s);
+			    })();
+			</script>
+								
+<script>
+function trackMixpanel() {
+	if (mixpanel) {
+		mixpanel.identify("127736");
+		mixpanel.people.set({
+			"$email": "coghlan.ty@gmail.com",
+			"$created": "2016-10-22 01:11:11",
+			"$plantype": 20,
+			"$trial": "1",
+			"firstname": "Ty",
+			"lastname": "Coghlan",
+			"name": "Ty Coghlan",
+			"user_id": "127736",
+			"company": "Northeastern University",
+			"ref_source": "l2p8oS___http://keyhole.co/hashtag-preview",
+			"phone": "970 846 8716",
+			"lastseen": "1477150585"
+			});
+			mixpanel.register({"plantype": "20"});
+			mixpanel.register({"trial": "1"});
+		}
+	}
+</script>
+<script>
+if (_cio) {
+	_cio.identify({
+		"email": "coghlan.ty@gmail.com",
+		"created_at": "1477113071",
+		"plantype": 20,
+		"trial": "1",
+		"firstname": "Ty",
+		"lastname": "Coghlan",
+		"name": "Ty Coghlan",
+		"id": "127736",
+		"company": "Northeastern University",
+		"ref_source": "l2p8oS___http://keyhole.co/hashtag-preview",
+		"phone": "970 846 8716",
+		"token": "v3b4o0p2q1w2h2x",
+		"lastseen": "1477150585"
+	});
+}
+</script>
+<script id="IntercomSettingsScriptTag">
+	window.intercomSettings = {
+		name: "Ty Coghlan",
+		email: "coghlan.ty@gmail.com",
+		user_id: "127736",
+		company: "Northeastern University",
+		phone: "970 846 8716",
+		trial: "1",
+		trial_expires: "2016-10-25 01:11:11",
+		plantype: "20",
+		subscribed: "",
+		ref_source: "l2p8oS___http://keyhole.co/hashtag-preview",
+		created_at: 1477113071,
+						
+		app_id: "955eefa322ad69a6a8a43621cdc059afc25db3f7"
+	};
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://static.intercomcdn.com/intercom.v1.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}};})()</script>			        					
+        <script>
+            // footer stuff
+            $('#keyhole-footer').show();
+            $('#keyhole-footer').css({'position': 'absolute', 'left': 0, 'right': 0, 'z-index': 5});
+            var distance = $('.tracker').height() + 80;
+            if (distance < $(window).height()) {
+            	if ($(window).height() < 700) {
+                    $('#keyhole-footer').css({'top': '100vh'});
+            	} else {
+            	   $('#keyhole-footer').css({'top': '80vh'});
+            	}
+            } else {
+                $('#keyhole-footer').css({'top': distance});
+            }
+          
+            $(window).resize(function() {
+                var distance = $('.tracker').height() + 80;
+                if (distance < $(window).height()) {
+                    if ($(window).height() < 700) {
+                        $('#keyhole-footer').css({'top': '100vh'});
+                    } else {
+                        $('#keyhole-footer').css({'top': '80vh'});
+                    }
+                } else {
+                    $('#keyhole-footer').css({'top': distance});
+                }
+            });
+
+            $(window).scroll(function() {
+                var distance = $('.tracker').height() + 80;
+                if (distance < $(window).height()) {
+                    if ($(window).height() < 700) {
+                        $('#keyhole-footer').css({'top': '100vh'});
+                    } else {
+                        $('#keyhole-footer').css({'top': '80vh'});
+                    }
+                } else {
+                    $('#keyhole-footer').css({'top': distance});
+                }
+            });
+        </script>
+	</body>
+</html>
