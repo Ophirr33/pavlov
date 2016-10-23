@@ -6,7 +6,7 @@
 
     <properties>
         <scala-version>2.11.8</scala-version>
-        <scala-maven-plugin-version>3.2.0</scala-maven-plugin-version>
+        <scala-maven-plugin-version>3.2.2</scala-maven-plugin-version>
     </properties>
 
     <groupId>ceri.ty.pavlov</groupId>
@@ -19,6 +19,12 @@
     </modules>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.5</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
         <dependency>
             <groupId>org.scala-lang</groupId>
