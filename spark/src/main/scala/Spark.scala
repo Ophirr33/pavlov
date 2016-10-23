@@ -7,10 +7,13 @@ import scala.collection.JavaConverters._
 import org.json4s.native.Serialization.{read, write}
 import com.ibm.watson.developer_cloud.tone_analyzer.v3.ToneAnalyzer
 import com.ibm.watson.developer_cloud.tone_analyzer.v3.model.{Tone, ToneAnalysis, ToneOptions, ToneScore}
+import org.apache.spark.ml.feature.LabeledPoint
+import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.mllib.tree.DecisionTree
+import org.apache.spark.mllib.tree.model.DecisionTreeModel
 import org.apache.spark.mllib.util.MLUtils
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
-//import org.apache.spark.mllib.
 
 import scala.concurrent.{Await, Future}
 import scala.io.BufferedSource
@@ -18,25 +21,57 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration.FiniteDuration
 
 object Spark {
-  def file(extra: String) = "spark/src/main/resources/" + extra
+
+  val config = new SparkConf()
+  config.setMaster("local[2]").setAppName("Pavlov")
+  val sc = SparkContext.getOrCreate(config)
+  val model = DecisionTreeModel.load(sc, file("classificationModel"))
+
+  def file: (String => String) = WatsonFriend.file
+
 
   def apply(text: String): Boolean = {
-    true
+    val emotion = SentimentAnalysis(text)
+    val curse = CurseFrequency(text)
+    model.predict(Vectors.dense(emotion.anger, emotion.disgust, emotion.fear, emotion.joy, emotion.sadness, curse)) == 1.0
+  }
+
+  def setupModel(): Unit = {
+    val data = MLUtils.loadLibSVMFile(sc, file("final_svm.txt"))
+
+    val splits = data.randomSplit(Array(0.7, 0.3))
+    val (trainingData, testData) = (splits(0), splits(1))
+
+    val numClasses = 2
+    val categoricalFeaturesInfo = Map[Int, Int]()
+    val impurity = "gini"
+    val maxDepth = 6
+    val maxBins = 32
+
+    val model = DecisionTree.trainClassifier(trainingData, numClasses, categoricalFeaturesInfo,
+      impurity, maxDepth, maxBins)
+
+    // Evaluate model on test instances and compute test error
+    val labelAndPreds = testData.map { point =>
+      val prediction = model.predict(point.features)
+      (point.label, prediction)
+    }
+    val testErr = labelAndPreds.filter(r => r._1 != r._2).count().toDouble / testData.count()
+    println("Test Error = " + testErr)
+    println("Learned classification tree model:\n" + model.toDebugString)
+
+    // Save and load model
+    model.save(sc, file("classificationModel"))
   }
 
   def main(args: Array[String]): Unit = {
-    val config = new SparkConf()
-    config.setMaster("local[2]").setAppName("Pavlov")
-    val sc = SparkContext.getOrCreate(config)
-    val data = MLUtils.loadLibSVMFile(sc, file("fuckyou_svm.txt"))
-    val hopeData = MLUtils.loadLibSVMFile(sc, file("hate_svm.txt"))
-    val hateData = MLUtils.loadLibSVMFile(sc, file("hope_svm.txt"))
-    val splits = data.randomSplit(Array(0.7, 0.3))
-    val (trainingData, testData) = (splits(0), splits(1))
+    setupModel()
   }
 }
 
 object WatsonFriend {
+
+  def file(extra: String = "") = "spark/src/main/resources/" + extra
 
   def queryResourcesFromStreamWatson(readFileName: String, writeFileName: String, isGood:Boolean): Unit = {
     implicit val formats = org.json4s.DefaultFormats
@@ -77,20 +112,31 @@ object WatsonFriend {
   }
 
   def main(args: Array[String]): Unit = {
-    writeToSvm(readResourceFromFile(Spark.file("hate_resources.txt")), Spark.file("hate_svm.txt"))
-    writeToSvm(readResourceFromFile(Spark.file("hope_resources.txt")), Spark.file("hope_svm.txt"))
+    createResourceFiles()
 
-//    // Parse watson and store it into files. Hold onto your bumholes this takes a while.
-//    val f1 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/hope_stream.txt", "spark/src/main/resources/hope_resources.txt", isGood = true))
-//    val f2 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/fuckyou_stream.txt",  "spark/src/main/resources/fuckyou_resources.txt", isGood = false))
-//    val f3 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/hate_stream.txt",  "spark/src/main/resources/hate_resources.txt", isGood = false))
-//    val await = (f: Future[_]) => Await.result(f, new FiniteDuration(45, scala.concurrent.duration.MINUTES))
-//    await(f1)
-//    await(f2)
-//    await(f3)
-//
-//    Await.result(f2, new FiniteDuration(45, scala.concurrent.duration.MINUTES))
-//    Await.result(f3, new FiniteDuration(45, scala.concurrent.duration.MINUTES))
+    writeToSvm(
+      readResourceFromFile(file("hate_resources.txt")) ++
+      readResourceFromFile(file("hope_resources.txt")) ++
+      readResourceFromFile(file("fuckyou_resources.txt")),
+      "final_svm.txt")
+
+
+  }
+
+  def createResourceFiles(): Unit = {
+        // Parse watson and store it into files. Hold onto your bumholes this takes a while.
+        val f1 = Future(queryResourcesFromStreamWatson(file("hope_stream.txt"), "spark/src/main/resources/hope_resources.txt", isGood = true))
+        val f2 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/fuckyou_stream.txt",  "spark/src/main/resources/fuckyou_resources.txt", isGood = false))
+        val f3 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/hate_stream.txt",  "spark/src/main/resources/hate_resources.txt", isGood = false))
+        val await = (f: Future[_]) => Await.result(f, new FiniteDuration(45, scala.concurrent.duration.MINUTES))
+        await(f1)
+        await(f2)
+        await(f3)
+
+        val minutes = scala.concurrent.duration.MINUTES
+        Await.result(f1, new FiniteDuration(45, minutes))
+        Await.result(f2, new FiniteDuration(45, minutes))
+        Await.result(f3, new FiniteDuration(45, minutes))
   }
 
 }
