@@ -4,6 +4,68 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <scala-version>2.11.8</scala-version>
+        <scala-maven-plugin-version>3.2.2</scala-maven-plugin-version>
+    </properties>
+
+    <build>
+    <pluginManagement>
+    <plugins>
+    <plugin>
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+        <version>${scala-maven-plugin-version}</version>
+        <executions>
+            <!-- Allows Java and Scala code to be compiled together and call each other -->
+            <execution>
+                <id>compile</id>
+                <goals>
+                    <goal>compile</goal>
+                </goals>
+                <phase>compile</phase>
+            </execution>
+            <execution>
+                <id>test-compile</id>
+                <goals>
+                    <goal>testCompile</goal>
+                </goals>
+                <phase>test-compile</phase>
+            </execution>
+            <execution>
+                <phase>process-resources</phase>
+                <goals>
+                    <goal>compile</goal>
+                </goals>
+            </execution>
+        </executions>
+        <configuration>
+            <jvmArgs>
+                <jvmArg>-XX:+AggressiveOpts</jvmArg>
+                <jvmArg>-XX:CompileThreshold=500</jvmArg>
+                <jvmArg>-XX:+UseFastAccessorMethods</jvmArg>
+                <jvmArg>-XX:+OptimizeStringConcat</jvmArg>
+                <jvmArg>-XX:+TieredCompilation</jvmArg>
+                <jvmArg>-XX:+UseConcMarkSweepGC</jvmArg>
+                <jvmArg>-XX:+DoEscapeAnalysis</jvmArg>
+                <jvmArg>-server</jvmArg>
+                <jvmArg>-Xms64m</jvmArg>
+                <jvmArg>-Xmx1024m</jvmArg>
+            </jvmArgs>
+            <scalaVersion>${scala-version}</scalaVersion>
+            <args>
+                <arg>-Xcheckinit</arg>
+                <arg>-unchecked</arg>
+                <arg>-deprecation</arg>
+                <arg>-Xlint:adapted-args,inaccessible,infer-any,missing-interpolator,private-shadow,type-parameter-shadow,unsound-match</arg>
+                <!--<arg>-Xfatal-warnings</arg>-->
+            </args>x
+        </configuration>
+    </plugin>
+    </plugins>
+    </pluginManagement>
+    </build>
+
     <groupId>ceri.ty.pavlov</groupId>
     <artifactId>pavlov</artifactId>
     <packaging>pom</packaging>

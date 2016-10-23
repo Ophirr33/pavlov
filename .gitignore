@@ -1,9 +1,2 @@
-*.idea
-*/idea
-*.iml
-out
 secrets.txt
-target
-*/target
-*/out
 pavlov.pem

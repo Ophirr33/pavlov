@@ -1,24 +1,22 @@
 import java.io._
-import java.util.function.{Function, Predicate}
+import java.util.function.Function
 import java.util.stream.Collectors
 
-import scala.collection.JavaConversions._
-import scala.collection.JavaConverters._
-import org.json4s.native.Serialization.{read, write}
 import com.ibm.watson.developer_cloud.tone_analyzer.v3.ToneAnalyzer
 import com.ibm.watson.developer_cloud.tone_analyzer.v3.model.{Tone, ToneAnalysis, ToneOptions, ToneScore}
-import org.apache.spark.ml.feature.LabeledPoint
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.tree.DecisionTree
 import org.apache.spark.mllib.tree.model.DecisionTreeModel
 import org.apache.spark.mllib.util.MLUtils
-import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
+import org.json4s.native.Serialization.{read, write}
 
-import scala.concurrent.{Await, Future}
-import scala.io.BufferedSource
+import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration.FiniteDuration
+import scala.concurrent.{Await, Future}
+import scala.io.BufferedSource
 
 object Spark {
 

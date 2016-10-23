@@ -11,6 +11,40 @@
 
     <artifactId>rest</artifactId>
 
+    <build>
+    <plugins>
+    <plugin>
+        <groupId>maven</groupId>
+        <artifactId>maven-scala-plugin</artifactId>
+        <version>${scala-maven-plugin-version}</version>
+        <configuration>
+            <launchers>
+                <launcher>
+                    <mainClass>Bot</mainClass>
+
+                    <!-- jvmArgs are optional -->
+
+                    <jvmArgs>
+                        <jvmArg>-XX:+AggressiveOpts</jvmArg>
+                        <jvmArg>-XX:CompileThreshold=500</jvmArg>
+                        <jvmArg>-XX:+UseFastAccessorMethods</jvmArg>
+                        <jvmArg>-XX:+OptimizeStringConcat</jvmArg>
+                        <jvmArg>-XX:+TieredCompilation</jvmArg>
+                        <jvmArg>-XX:+UseConcMarkSweepGC</jvmArg>
+                        <jvmArg>-XX:+DoEscapeAnalysis</jvmArg>
+                        <jvmArg>-server</jvmArg>
+                        <jvmArg>-Xms64m</jvmArg>
+                        <jvmArg>-Xmx1024m</jvmArg>
+                    </jvmArgs>
+                </launcher>
+                <!-- you could define other launcher -->
+            </launchers>
+        </configuration>
+    </plugin>
+    </plugins>
+    </build>
+
+
     <dependencies>
         <dependency>
             <groupId>com.typesafe.akka</groupId>
