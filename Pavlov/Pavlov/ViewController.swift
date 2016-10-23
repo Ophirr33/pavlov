@@ -73,7 +73,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         }
         
         if started && Model.INSTANCE.getAmount() > 0 {
-            Model.INSTANCE.postPayments()
+            //postPayments()
         }
     }
     
@@ -144,23 +144,11 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     func analyzeText(_ s: String) {
-        let isGood = (arc4random_uniform(2) == 0)
-        if !isGood {
-            Model.INSTANCE.incrementAmount()
-            OperationQueue.main.addOperation {
-                self.textField.text = s
-                self.amountLabel.text = "$" + String(format: "%.2f", Model.INSTANCE.getAmount())
-                self.view.backgroundColor = UIColor(red: 225 / 255, green: 65 / 255, blue: 61 / 255, alpha: 1)
-                self.totalLabel.textColor = UIColor.white
-                self.amountLabel.textColor = UIColor.white
-            }
-        }
-        
-        /*let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")
+        let url = URL(string: "http://localhost:9090/pavlov")
         var request = URLRequest(url: url!)
         request.httpMethod = "GET"
         do {
-            request.httpBody = try JSONSerialization.data(withJSONObject: ["text":currentText], options: .prettyPrinted)
+            request.httpBody = try JSONSerialization.data(withJSONObject: ["text":s], options: .prettyPrinted)
         } catch {
             return
         }
@@ -182,20 +170,19 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
                     Model.INSTANCE.incrementAmount()
                     OperationQueue.main.addOperation {
                         self.amountLabel.text = "$" + String(format: "%.2f", Model.INSTANCE.getAmount())
-                        self.textField.text = self.currentText
+                        self.textField.text = s
                         self.view.backgroundColor = UIColor(red: 225 / 255, green: 65 / 255, blue: 61 / 255, alpha: 1)
                         self.totalLabel.textColor = UIColor.white
                         self.amountLabel.textColor = UIColor.white
                     }
                 }
-                self.currentText = ""
             } catch { }
         }
-        task.resume()*/
+        task.resume()
     }
     
     func postPayments() {
-        let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")
+        let url = URL(string: "http://localhost:9090/pay")
         var request = URLRequest(url: url!)
         request.httpMethod = "POST"
         do {
@@ -218,10 +205,10 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
                 
                 let individualCost = json["cost"] as! Double
                 let alertController = UIAlertController(title: "Pavlov", message:
-                    "Total: \(Model.INSTANCE.amount)\nIndividual Share: \(Model.INSTANCE.individualCost)\nEach participant has paid their share to the group account.", preferredStyle: UIAlertControllerStyle.alert)
+                    "Total: \(Model.INSTANCE.amount)\nIndividual Share: \(individualCost)\nEach participant has paid their share to the group account.", preferredStyle: UIAlertControllerStyle.alert)
                 alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
                 
-                UIViewController.present(alertController, animated: true, completion: nil)
+                self.present(alertController, animated: true, completion: nil)
                 Model.INSTANCE.amount = 0.00
             } catch { }
         }

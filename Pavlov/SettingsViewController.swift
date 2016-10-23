@@ -35,19 +35,9 @@ class SettingsViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
         }
         
-        Model.INSTANCE.setFamilyAccount(familyAccount.text!)
-        return
+        let url = URL(string: "http://localhost:9090/accounts?account=\"" + Model.INSTANCE.familyAccount + "\"")
         
-        let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")
-        var request = URLRequest(url: url!)
-        request.httpMethod = "GET"
-        do {
-            request.httpBody = try JSONSerialization.data(withJSONObject: ["account":familyAccount.text], options: .prettyPrinted)
-        } catch {
-            return
-        }
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url!) { data, response, error in
             OperationQueue.main.addOperation {
                 self.individualAccounts.text = ""
             }
@@ -63,11 +53,12 @@ class SettingsViewController: UIViewController {
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
                 
-                var text = ""
+                var text = "start of text\n"
                 let list = json["accounts"] as! [String]
                 for account in list {
                     text += (account + "\n")
                 }
+                text += "end of text"
                 OperationQueue.main.addOperation {
                     self.individualAccounts.text = text
                 }

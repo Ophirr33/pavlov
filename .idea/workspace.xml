@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae7bbf79-a50b-4a77-8155-0f47c3c47215" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_1.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/target/rest-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/rest/target/rest-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark/target/spark-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/spark/target/spark-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/master" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pavlov/Pavlov.xcodeproj/project.xcworkspace/xcuserdata/cerid.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Pavlov/Pavlov.xcodeproj/project.xcworkspace/xcuserdata/cerid.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_8.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pavlov/Pavlov/ViewController.swift" afterPath="$PROJECT_DIR$/Pavlov/Pavlov/ViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pavlov/SettingsViewController.swift" afterPath="$PROJECT_DIR$/Pavlov/SettingsViewController.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/rest.iml" afterPath="$PROJECT_DIR$/rest/rest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala" afterPath="$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/rest/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/spark/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="pavlov.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,14 +36,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PavlovService.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#64#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,43 +51,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rest/src/test/scala/PavlovSpec.scala" />
-        <option value="$PROJECT_DIR$/spark/src/main/resources/curse_words" />
-        <option value="$PROJECT_DIR$/stream-download/stream-crawl.py" />
-        <option value="$PROJECT_DIR$/spark/target/classes/fuckyou_stream.txt" />
-        <option value="$PROJECT_DIR$/secrets" />
-        <option value="$PROJECT_DIR$/secrets.json" />
-        <option value="$PROJECT_DIR$/spark/src/main/resources/secrets.txt" />
-        <option value="$PROJECT_DIR$/spark/src/main/resources/fuckyou_stream.txt" />
-        <option value="$PROJECT_DIR$/spark/src/main/resources/hate_stream.txt" />
-        <option value="$PROJECT_DIR$/spark/src/main/resources/hope_frequencies.txt" />
-        <option value="$PROJECT_DIR$/spark/src/main/resources/hope_resources.txt" />
-        <option value="$PROJECT_DIR$/spark/src/main/resources/fuckyou_resources.txt" />
-        <option value="$PROJECT_DIR$/spark/src/main/resources/hate_resources.txt" />
-        <option value="$PROJECT_DIR$/spark/src/main/resources/final_svm.txt" />
-        <option value="$PROJECT_DIR$/spark/src/main/scala/Spark.scala" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_modules_scala_java8_compat_2_11_0_7_0.xml" />
-        <option value="$PROJECT_DIR$/rest/src/main/scala/testing/Boot.scala" />
-        <option value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/spark/src/main/scala/testing2/Spark.scala" />
-        <option value="$PROJECT_DIR$/rest/src/main/scala/testing/PavlovService.scala" />
-        <option value="$PROJECT_DIR$/spark/src/main/scala/Spark.scala" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/rest/src/main/scala/Boot.scala" />
-        <option value="$PROJECT_DIR$/rest/src/main/Hack.java" />
-        <option value="$PROJECT_DIR$/rest/src/main/java/Hack.java" />
-        <option value="$PROJECT_DIR$/rest/pom.xml" />
-        <option value="$PROJECT_DIR$/spark/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala" />
       </list>
     </option>
   </component>
@@ -106,11 +69,6 @@
       <MavenGeneralSettings>
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds">
@@ -382,6 +340,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pavlov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pavlov" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -390,89 +362,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="/usr/local/bin/python3" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="reduceByKey&#9;null&#9;null&#10;textFile&#9;null&#9;null" />
-    <property name="FullScreen" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/rest/src/main/java" />
-      <recent name="$PROJECT_DIR$/spark/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/spark/src/main/resources" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resouces" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Unnamed">
-    <configuration default="false" name="Spark" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Spark" />
-      <option name="VM_PARAMETERS" value="-Xmx2048m" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="spark" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="WatsonFriend" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="WatsonFriend" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="spark" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Boot">
     <configuration default="false" name="Boot" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Boot" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="rest" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="rest-1.0-SNAPSHOT.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/rest/target/rest-1.0-SNAPSHOT.jar" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Hack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Hack" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -706,7 +601,6 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
-      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -799,28 +693,6 @@
       <option name="workingDirectory" />
       <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
@@ -986,12 +858,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1145,131 +1011,27 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Boot" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="rest" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="MavenTest" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="scala:run" />
-              </list>
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method />
-    </configuration>
-    <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Maven.MavenTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Spark" />
-      <item index="3" class="java.lang.String" itemvalue="Application.WatsonFriend" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Boot" />
-      <item index="5" class="java.lang.String" itemvalue="JAR Application.rest-1.0-SNAPSHOT.jar" />
-      <item index="6" class="java.lang.String" itemvalue="Application.Hack" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Boot" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Hack" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Boot" />
-        <item index="2" class="java.lang.String" itemvalue="JAR Application.rest-1.0-SNAPSHOT.jar" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Spark" />
-        <item index="4" class="java.lang.String" itemvalue="Application.WatsonFriend" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Boot" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SbtLocalSettings">
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$/../my-project" value="1468506962000" />
-      </map>
-    </option>
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="ae7bbf79-a50b-4a77-8155-0f47c3c47215" name="Default" comment="" />
-      <created>1477106646457</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1477106646457</updated>
-      <workItem from="1477106647732" duration="14793000" />
-      <workItem from="1477159911807" duration="42267000" />
-      <workItem from="1477212147976" duration="4539000" />
-    </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="PavlovSpec - 2016.10.22 at 00h 08m 30s.xml">
-      <configuration name="PavlovSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="PavlovSpec - 2016.10.22 at 00h 09m 13s.xml">
-      <configuration name="PavlovSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="PavlovSpec - 2016.10.22 at 00h 13m 11s.xml">
-      <configuration name="PavlovSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="PavlovSpec - 2016.10.22 at 00h 17m 30s.xml">
-      <configuration name="PavlovSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="PavlovSpec - 2016.10.22 at 00h 22m 42s.xml">
-      <configuration name="PavlovSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="PavlovSpec - 2016.10.22 at 00h 23m 09s.xml">
-      <configuration name="PavlovSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="PavlovSpec - 2016.10.22 at 00h 26m 19s.xml">
-      <configuration name="PavlovSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="PavlovSpec - 2016.10.22 at 00h 29m 13s.xml">
-      <configuration name="PavlovSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="PavlovSpec - 2016.10.22 at 00h 31m 16s.xml">
-      <configuration name="PavlovSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="PavlovSpec - 2016.10.22 at 00h 58m 40s.xml">
-      <configuration name="PavlovSpec" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61599000" />
+    <option name="totallyTimeSpent" value="72000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1282,7 +1044,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.50277776" order="6" side_tool="true" content_ui="tabs" x="41" y="156" width="1440" height="823" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21666667" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21666667" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1332,9 +1094,6 @@
     <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1892,13 +1651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spark/src/main/scala/Spark.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2992">
@@ -2035,115 +1787,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
+        <state relative-caret-position="464">
           <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
-            <element signature="e#0#64#0" expanded="true" />
+            <marker date="1477217123000" expanded="true" signature="7:169" ph="..." />
+            <marker date="1477217123000" expanded="true" signature="242:1052" ph="{...}" />
+            <marker date="1477217123000" expanded="true" signature="627:704" ph="..." />
+            <marker date="1477217123000" expanded="true" signature="631:704" ph="(...)" />
+            <marker date="1477217123000" expanded="true" signature="650:680" ph="(...)" />
+            <marker date="1477217123000" expanded="true" signature="728:859" ph="{...}" />
+            <marker date="1477217123000" expanded="true" signature="749:855" ph="(...)" />
+            <marker date="1477217123000" expanded="true" signature="786:849" ph="(...)" />
+            <marker date="1477217123000" expanded="true" signature="885:1050" ph="{...}" />
+            <marker date="1477217123000" expanded="true" signature="908:1046" ph="(...)" />
+            <marker date="1477217123000" expanded="true" signature="948:1040" ph="(...)" />
           </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>pavlov:jar</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Python</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.12.0-RC1</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>Python 3.5.2 (/usr/local/bin/python3)</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>rest</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: com.typesafe.akka:akka-actor_2.11:2.4.11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

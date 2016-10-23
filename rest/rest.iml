@@ -13,6 +13,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="scala-sdk-2.11.8" level="application" />
+    <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-java8-compat_2.11:0.7.0" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-http-experimental_2.11:2.4.11" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-http-core_2.11:2.4.11" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-stream_2.11:2.4.11" level="project" />
@@ -184,5 +185,6 @@
     <orderEntry type="library" name="Maven: org.jpmml:pmml-model:1.2.15" level="project" />
     <orderEntry type="library" name="Maven: org.jpmml:pmml-schema:1.2.15" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.11.8" level="project" />
+    <orderEntry type="library" name="scala-sdk-2.11.8" level="application" />
   </component>
 </module>
