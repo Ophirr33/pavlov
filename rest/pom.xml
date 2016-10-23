@@ -11,6 +11,24 @@
 
     <artifactId>rest</artifactId>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>3.2.2</version>
+                <configuration>
+                    <launchers>
+                        <launcher>
+                            <id>theLauncher</id>
+                            <mainClass>Boot</mainClass>
+                        </launcher>
+                    </launchers>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>com.typesafe.akka</groupId>

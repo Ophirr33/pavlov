@@ -18,26 +18,6 @@
         <module>rest</module>
     </modules>
 
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>net.alchim31.maven</groupId>
-                <artifactId>scala-maven-plugin</artifactId>
-                <version>3.2.2</version>
-                <configuration>
-                    <launchers>
-                        <launcher>
-                            <id>theLauncher</id>
-                            <mainClass>Foo</mainClass>
-                        </launcher>
-                    </launchers>
-                </configuration>
-            </plugin>
-
-        </plugins>
-    </build>
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
         <dependency>

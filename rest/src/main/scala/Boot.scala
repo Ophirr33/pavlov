@@ -12,6 +12,7 @@ import scala.concurrent.Future
 
 object Boot extends PavlovService {
   def main(args: Array[String]): Unit = {
+    println("Booting up!")
     val (host, port) = if (args.length == 3) (args(1), args(2).toInt) else ("localhost", 9090)
     implicit val system = ActorSystem()
     implicit val materializer = ActorMaterializer()
