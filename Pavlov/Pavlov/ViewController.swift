@@ -17,6 +17,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     @IBOutlet weak var textField: UITextView!
     
     private var thread: Thread?
+    private var started = false
 
     private var latestRecognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
@@ -46,11 +47,17 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
             }
             
             if isRecordingEnabled {
+                self.started = true
                 self.spinner.startAnimating()
                 self.thread = Thread(block: { self.startRecording() })
                 self.thread?.start()
             } else {
                 self.navigationController?.popViewController(animated: true)
+                let alertController = UIAlertController(title: "Pavlov", message:
+                    "Microphone or recording capabilities are currently unavailable. Please check your settings.", preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+                
+                self.present(alertController, animated: true, completion: nil)
             }
         }
     }
@@ -61,8 +68,12 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        if (thread?.isExecuting)! {
+        if thread != nil && (thread?.isExecuting)! {
             thread?.cancel()
+        }
+        
+        if started && Model.INSTANCE.getAmount() > 0 {
+            Model.INSTANCE.postPayments()
         }
     }
     
@@ -181,5 +192,39 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
             } catch { }
         }
         task.resume()*/
+    }
+    
+    func postPayments() {
+        let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "POST"
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: ["account":Model.INSTANCE.familyAccount, "amount":Model.INSTANCE.amount], options: .prettyPrinted)
+        } catch {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard error == nil else {
+                print(error)
+                return
+            }
+            guard let data = data else {
+                return
+            }
+            
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
+                
+                let individualCost = json["cost"] as! Double
+                let alertController = UIAlertController(title: "Pavlov", message:
+                    "Total: \(Model.INSTANCE.amount)\nIndividual Share: \(Model.INSTANCE.individualCost)\nEach participant has paid their share to the group account.", preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+                
+                UIViewController.present(alertController, animated: true, completion: nil)
+                Model.INSTANCE.amount = 0.00
+            } catch { }
+        }
+        task.resume()
     }
 }
