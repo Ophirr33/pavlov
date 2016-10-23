@@ -26,8 +26,8 @@ trait PavlovService extends SprayJsonSupport with DefaultJsonProtocol {
 
   def pavlov: Route = {
     path("pavlov") {
-      parameter("text".as[Text]) { text: Text =>
-        complete(Answer(Spark(text.text)))
+      parameter("text".as[String]) { text: String =>
+        complete(Answer(Spark(text)))
       }
     }
   }

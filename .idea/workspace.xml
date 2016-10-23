@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae7bbf79-a50b-4a77-8155-0f47c3c47215" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_1.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/target/rest-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/rest/target/rest-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark/target/spark-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/spark/target/spark-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/rest.iml" afterPath="$PROJECT_DIR$/rest/rest.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala" afterPath="$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/rest/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/spark/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="pavlov.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +41,8 @@
       <file leaf-file-name="PavlovService.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+            <state relative-caret-position="384">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -1220,7 +1228,7 @@
       <updated>1477106646457</updated>
       <workItem from="1477106647732" duration="14793000" />
       <workItem from="1477159911807" duration="42267000" />
-      <workItem from="1477212147976" duration="3237000" />
+      <workItem from="1477212147976" duration="4539000" />
     </task>
     <servers />
   </component>
@@ -1257,7 +1265,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60297000" />
+    <option name="totallyTimeSpent" value="61599000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1975,7 +1983,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spark/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
+        <state relative-caret-position="576">
           <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding>
             <marker date="1477213735000" expanded="true" signature="89:1605" ph="..." />
@@ -1985,26 +1993,6 @@
             <marker date="1477213735000" expanded="true" signature="871:1043" ph="..." />
             <marker date="1477213735000" expanded="true" signature="1146:1303" ph="..." />
             <marker date="1477213735000" expanded="true" signature="1410:1571" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding>
-            <marker date="1477215377000" expanded="true" signature="89:1563" ph="..." />
-            <marker date="1477215377000" expanded="true" signature="317:452" ph="..." />
-            <marker date="1477215377000" expanded="true" signature="608:684" ph="..." />
-            <marker date="1477215377000" expanded="true" signature="698:1252" ph="..." />
-            <marker date="1477215377000" expanded="true" signature="716:1239" ph="..." />
-            <marker date="1477215377000" expanded="true" signature="737:1219" ph="..." />
-            <marker date="1477215377000" expanded="true" signature="924:1197" ph="..." />
-            <marker date="1477215377000" expanded="true" signature="956:1164" ph="..." />
-            <marker date="1477215377000" expanded="true" signature="991:1131" ph="..." />
-            <marker date="1477215377000" expanded="true" signature="1272:1551" ph="..." />
-            <marker date="1477215377000" expanded="true" signature="1374:1531" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2025,10 +2013,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding>
+            <marker date="1477217051000" expanded="true" signature="89:1564" ph="..." />
+            <marker date="1477217051000" expanded="true" signature="317:452" ph="..." />
+            <marker date="1477217051000" expanded="true" signature="608:684" ph="..." />
+            <marker date="1477217051000" expanded="true" signature="698:1252" ph="..." />
+            <marker date="1477217051000" expanded="true" signature="716:1239" ph="..." />
+            <marker date="1477217051000" expanded="true" signature="737:1219" ph="..." />
+            <marker date="1477217051000" expanded="true" signature="924:1197" ph="..." />
+            <marker date="1477217051000" expanded="true" signature="956:1164" ph="..." />
+            <marker date="1477217051000" expanded="true" signature="991:1131" ph="..." />
+            <marker date="1477217051000" expanded="true" signature="1272:1551" ph="..." />
+            <marker date="1477217051000" expanded="true" signature="1374:1531" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="36" column="56" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+        <state relative-caret-position="384">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
