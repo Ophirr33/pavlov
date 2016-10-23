@@ -27,7 +27,13 @@ class SettingsViewController: UIViewController {
     func signingIn() {
         familyAccount.endEditing(true)
         
-        if familyAccount.text == nil || familyAccount.text == "" { return }
+        if familyAccount.text == nil || familyAccount.text == "" {
+            let alertController = UIAlertController(title: "Pavlov", message:
+                "Account number must be provided to fully utilize this app.", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+        }
         
         Model.INSTANCE.setFamilyAccount(familyAccount.text!)
         return

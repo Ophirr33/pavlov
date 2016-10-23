@@ -13,8 +13,8 @@ class Model {
     
     static let INSTANCE = Model()
     
-    private var amount = 0.00
-    private var increment = 1.00
+    var amount = 0.00
+    var increment = 1.00
     var familyAccount = ""
     
     func getAmount() -> Double {
@@ -35,38 +35,5 @@ class Model {
     
     func setIncrement(d: Double) {
         increment = d
-    }
-    
-    func testRest(field: UITextView) {
-        let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")
-        
-        let task = URLSession.shared.dataTask(with: url!) { data, response, error in
-            var text = ""
-            
-            guard error == nil else {
-                text = (error as! String!)
-                return
-            }
-            guard let data = data else {
-                text = ("Data is empty")
-                return
-            }
-            
-            do {
-                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
-                
-                for (key, val) in json {
-                    text += key + " : " + String(describing: val) + "\n"
-                }
-            } catch {
-                text = "FAILURE"
-            }
-            
-            OperationQueue.main.addOperation {
-                field.text = text
-            }
-        }
-        
-        task.resume()
     }
 }
