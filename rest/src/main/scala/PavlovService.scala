@@ -8,10 +8,13 @@ import spray.json._
 trait PavlovService extends SprayJsonSupport with DefaultJsonProtocol {
   implicit val textFormat   = jsonFormat1(Text)
   implicit val answerFormat = jsonFormat1(Answer)
+  implicit val accountsFomat = jsonFormat1(Accounts)
 
   case class Text(text: String)
 
   case class Answer(ans: Boolean)
+
+  case class Accounts(accounts: List[String])
 
   def route: Route = get {
     path("ping") {
@@ -23,6 +26,14 @@ trait PavlovService extends SprayJsonSupport with DefaultJsonProtocol {
     path("pavlov") {
       parameter("text".as[Text]) { text: Text =>
         complete(Answer(Spark(text.text)))
+      }
+    }
+  }
+
+  def accounts: Route = {
+    path("accounts") {
+      parameter("account".as[String]) { accounts: String =>
+        complete(Accounts(List("123456", "142524", "135246")))
       }
     }
   }
