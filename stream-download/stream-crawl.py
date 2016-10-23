@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+
 import sys
 import subprocess
 import html.parser
@@ -16,7 +17,7 @@ def main(cookie, tag, pages):
         results += parse_html(page)
     f = open('{}_stream.txt'.format(tag), 'w')
     for x in results:
-        print(x.strip()+"\n", file=f)
+        print(x.strip()+"\n===========\n", file=f)
     f.close()
 
 def curl(cookie, tag, page):
