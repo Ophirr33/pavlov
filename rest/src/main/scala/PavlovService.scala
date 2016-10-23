@@ -34,7 +34,7 @@ trait PavlovService extends SprayJsonSupport with DefaultJsonProtocol {
 
   def accounts: Route = {
     path("accounts") {
-      parameter("account".as[Account]) { accounts: Account =>
+      parameter("account".as[String]) { accounts: String =>
         complete(Accounts(List("123456", "142524", "135246")))
       }
     }
