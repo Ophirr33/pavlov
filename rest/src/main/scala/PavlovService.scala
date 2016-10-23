@@ -21,7 +21,7 @@ trait PavlovService extends SprayJsonSupport with DefaultJsonProtocol {
   def route: Route = get {
     path("ping") {
       complete("pong")
-    } ~ pavlov
+    } ~ pavlov ~ accounts
   }
 
   def pavlov: Route = {
