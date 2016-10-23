@@ -6,7 +6,7 @@
 
     <properties>
         <scala-version>2.11.8</scala-version>
-        <scala-maven-plugin-version>3.2.2</scala-maven-plugin-version>
+        <scala-maven-plugin-version>3.2.0</scala-maven-plugin-version>
     </properties>
 
     <groupId>ceri.ty.pavlov</groupId>
@@ -18,21 +18,23 @@
         <module>rest</module>
     </modules>
 
+
     <build>
         <plugins>
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
-                <version>${scala-maven-plugin-version}</version>
+                <version>3.2.2</version>
                 <configuration>
                     <launchers>
                         <launcher>
                             <id>myLauncher</id>
-                            <mainClass>Boot</mainClass>
+                            <mainClass>Foo$</mainClass>
                         </launcher>
                     </launchers>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
@@ -43,7 +45,6 @@
             <artifactId>scala-library</artifactId>
             <version>2.11.8</version>
         </dependency>
-
     </dependencies>
 
 </project>
