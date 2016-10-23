@@ -9,10 +9,23 @@
 import UIKit
 
 class StartViewController: UIViewController {
-
+    
+    @IBOutlet weak var startTrainingButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        startTrainingButton.isEnabled = Model.INSTANCE.isAccountSet()
+        if startTrainingButton.isEnabled {
+            startTrainingButton.alpha = 1
+        } else {
+            startTrainingButton.alpha = 0.5
+        }
     }
 
     override func didReceiveMemoryWarning() {

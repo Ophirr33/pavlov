@@ -55,6 +55,11 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.amountLabel.text = "$" + String(format: "%.2f", Model.INSTANCE.getAmount())
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         if (thread?.isExecuting)! {
             thread?.cancel()
@@ -88,7 +93,7 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
             fatalError("Unable to create an SFSpeechAudioBufferRecognitionRequest object")
         }
         
-        recognitionRequest?.shouldReportPartialResults = false
+        recognitionRequest?.shouldReportPartialResults = true
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest!, resultHandler: { (result, error) in
             
             if result != nil {
@@ -97,26 +102,20 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
                 
                 if recognizedText!.contains("sorry") || recognizedText!.contains("Sorry") {
                     OperationQueue.main.addOperation {
-                        self.view.backgroundColor = UIColor.white
                         self.totalLabel.textColor = UIColor.black
                         self.amountLabel.textColor = UIColor.black
+                        self.view.backgroundColor = UIColor.white
                     }
                 }
-                if Model.INSTANCE.sendTextForAnalysis(s: recognizedText!) {
-                    Model.INSTANCE.incrementAmount()
-                    OperationQueue.main.addOperation {
-                        self.amountLabel.text = "$" + String(format: "%.2f", Model.INSTANCE.getAmount())
-                        self.textField.text = recognizedText
-                        self.view.backgroundColor = UIColor.red
-                        self.totalLabel.textColor = UIColor.white
-                        self.amountLabel.textColor = UIColor.white
-                    }
+                
+                if recognizedText!.characters.count >= 60 {
+                    self.analyzeText(recognizedText!)
+                    self.audioEngine.stop()
+                    recognitionTask?.finish()
+                    inputNode.removeTap(onBus: 0)
+                    self.startRecording()
                 }
             }
-            
-            self.audioEngine.stop()
-            inputNode.removeTap(onBus: 0)
-            self.startRecording()
         })
         
         let recordingFormat = inputNode.outputFormat(forBus: 0)
@@ -131,9 +130,56 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         } catch {
             print("audioEngine couldn't start because of an error.")
         }
+    }
+    
+    func analyzeText(_ s: String) {
+        let isGood = (arc4random_uniform(2) == 0)
+        if !isGood {
+            Model.INSTANCE.incrementAmount()
+            OperationQueue.main.addOperation {
+                self.textField.text = s
+                self.amountLabel.text = "$" + String(format: "%.2f", Model.INSTANCE.getAmount())
+                self.view.backgroundColor = UIColor(red: 225 / 255, green: 65 / 255, blue: 61 / 255, alpha: 1)
+                self.totalLabel.textColor = UIColor.white
+                self.amountLabel.textColor = UIColor.white
+            }
+        }
         
-        sleep(5)
-        self.audioEngine.stop()
-        recognitionTask?.finish()
+        /*let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: ["text":currentText], options: .prettyPrinted)
+        } catch {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard error == nil else {
+                print(error)
+                return
+            }
+            guard let data = data else {
+                return
+            }
+            
+            do {
+                let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
+                
+                let isGood = json["isGood"] as! Bool
+                if !isGood {
+                    Model.INSTANCE.incrementAmount()
+                    OperationQueue.main.addOperation {
+                        self.amountLabel.text = "$" + String(format: "%.2f", Model.INSTANCE.getAmount())
+                        self.textField.text = self.currentText
+                        self.view.backgroundColor = UIColor(red: 225 / 255, green: 65 / 255, blue: 61 / 255, alpha: 1)
+                        self.totalLabel.textColor = UIColor.white
+                        self.amountLabel.textColor = UIColor.white
+                    }
+                }
+                self.currentText = ""
+            } catch { }
+        }
+        task.resume()*/
     }
 }

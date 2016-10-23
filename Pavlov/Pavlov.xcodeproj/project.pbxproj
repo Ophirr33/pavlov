@@ -100,8 +100,8 @@
 				F2D55A831DBB254200FA798D /* ViewController.swift */,
 				F2D55AB11DBB34E900FA798D /* StartViewController.swift */,
 				F259AD571DBC368C00033023 /* SettingsViewController.swift */,
-				F2D55A851DBB254200FA798D /* Main.storyboard */,
 				F2D55A881DBB254200FA798D /* Assets.xcassets */,
+				F2D55A851DBB254200FA798D /* Main.storyboard */,
 				F2D55A8A1DBB254200FA798D /* LaunchScreen.storyboard */,
 				F2D55A8D1DBB254200FA798D /* Info.plist */,
 			);

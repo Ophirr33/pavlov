@@ -10,55 +10,64 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
-    @IBOutlet weak var jsonText: UITextView!
+    @IBOutlet weak var familyAccount: UITextField!
+    @IBOutlet weak var individualAccounts: UITextField!
+    @IBOutlet weak var signIn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        testRest()
-        // Do any additional setup after loading the view.
+        
+        var frameRect = individualAccounts.frame;
+        frameRect.size.height = 358; // <-- Specify the height you want here.
+        individualAccounts.frame = frameRect;
+        
+        signIn.addTarget(self, action: #selector(signingIn), for: .touchUpInside)
     }
     
-    func testRest() {
-        let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")
+    func signingIn() {
+        familyAccount.endEditing(true)
         
-        let task = URLSession.shared.dataTask(with: url!) { data, response, error in
-            var text = ""
+        if familyAccount.text == nil || familyAccount.text == "" { return }
+        
+        Model.INSTANCE.setFamilyAccount(familyAccount.text!)
+        return
+        
+        let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        do {
+            request.httpBody = try JSONSerialization.data(withJSONObject: ["account":familyAccount.text], options: .prettyPrinted)
+        } catch {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            OperationQueue.main.addOperation {
+                self.individualAccounts.text = ""
+            }
             
             guard error == nil else {
-                text = (error as! String!)
+                print(error)
                 return
             }
             guard let data = data else {
-                text = ("Data is empty")
                 return
             }
             
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
                 
-                for (key, val) in json {
-                    text += key + " : " + String(describing: val) + "\n"
+                var text = ""
+                let list = json["accounts"] as! [String]
+                for account in list {
+                    text += (account + "\n")
                 }
-            } catch {
-                text = "FAILURE"
-            }
-            
-            OperationQueue.main.addOperation {
-                self.jsonText.text = text
-            }
+                OperationQueue.main.addOperation {
+                    self.individualAccounts.text = text
+                }
+                Model.INSTANCE.setFamilyAccount(self.familyAccount.text!)
+            } catch { }
         }
-        
         task.resume()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
