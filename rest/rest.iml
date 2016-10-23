@@ -7,13 +7,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/scala" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="scala-sdk-2.11.8" level="application" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-http-experimental_2.11:2.4.11" level="project" />
-    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.11.8" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-http-core_2.11:2.4.11" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-stream_2.11:2.4.11" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe.akka:akka-actor_2.11:2.4.11" level="project" />
@@ -183,5 +183,6 @@
     <orderEntry type="library" name="Maven: org.spire-math:spire-macros_2.11:0.7.4" level="project" />
     <orderEntry type="library" name="Maven: org.jpmml:pmml-model:1.2.15" level="project" />
     <orderEntry type="library" name="Maven: org.jpmml:pmml-schema:1.2.15" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.11.8" level="project" />
   </component>
 </module>
