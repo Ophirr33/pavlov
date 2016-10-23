@@ -35,9 +35,11 @@ class SettingsViewController: UIViewController {
             self.present(alertController, animated: true, completion: nil)
         }
         
-        let url = URL(string: "http://localhost:9090/accounts?account=\"" + Model.INSTANCE.familyAccount + "\"")
+        let url = URL(string: "http://localhost:9090/accounts?account=\(Model.INSTANCE.familyAccount)")
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
         
-        let task = URLSession.shared.dataTask(with: url!) { data, response, error in
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
             OperationQueue.main.addOperation {
                 self.individualAccounts.text = ""
             }
@@ -53,12 +55,11 @@ class SettingsViewController: UIViewController {
             do {
                 let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
                 
-                var text = "start of text\n"
+                var text = ""
                 let list = json["accounts"] as! [String]
                 for account in list {
-                    text += (account + "\n")
+                    text += "\(account)\n"
                 }
-                text += "end of text"
                 OperationQueue.main.addOperation {
                     self.individualAccounts.text = text
                 }
