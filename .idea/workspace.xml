@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae7bbf79-a50b-4a77-8155-0f47c3c47215" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/target/rest-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/rest/target/rest-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark/target/spark-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/spark/target/spark-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala" afterPath="$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala" />
-    </list>
+    <list default="true" id="ae7bbf79-a50b-4a77-8155-0f47c3c47215" name="Default" comment="" />
     <ignored path="pavlov.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,8 +30,8 @@
       <file leaf-file-name="PavlovService.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="304">
+              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -1223,7 +1217,7 @@
       <updated>1477106646457</updated>
       <workItem from="1477106647732" duration="14793000" />
       <workItem from="1477159911807" duration="42267000" />
-      <workItem from="1477212147976" duration="3103000" />
+      <workItem from="1477212147976" duration="3117000" />
     </task>
     <servers />
   </component>
@@ -1260,7 +1254,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60163000" />
+    <option name="totallyTimeSpent" value="60177000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -2030,8 +2024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rest/src/main/scala/PavlovService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+        <state relative-caret-position="304">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
           <folding>
             <element signature="e#0#64#0" expanded="true" />
           </folding>
