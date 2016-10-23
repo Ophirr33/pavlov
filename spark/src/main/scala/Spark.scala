@@ -7,8 +7,10 @@ import scala.collection.JavaConverters._
 import org.json4s.native.Serialization.{read, write}
 import com.ibm.watson.developer_cloud.tone_analyzer.v3.ToneAnalyzer
 import com.ibm.watson.developer_cloud.tone_analyzer.v3.model.{Tone, ToneAnalysis, ToneOptions, ToneScore}
+import org.apache.spark.mllib.util.MLUtils
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
+//import org.apache.spark.mllib.
 
 import scala.concurrent.{Await, Future}
 import scala.io.BufferedSource
@@ -16,12 +18,25 @@ import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration.FiniteDuration
 
 object Spark {
-//  val config = new SparkConf(false)
-//  val sc = SparkContext.getOrCreate(config)
-//  val textFile: RDD[String] = sc.textFile("src/main/resources/blah.txt")
-//  val linesWithSpark: RDD[String] = textFile.filter(line => line.contains("VIM"))
-//  linesWithSpark.cache
+  def file(extra: String) = "spark/src/main/resources/" + extra
 
+  def apply(text: String): Boolean = {
+    true
+  }
+
+  def main(args: Array[String]): Unit = {
+    val config = new SparkConf()
+    config.setMaster("local[2]").setAppName("Pavlov")
+    val sc = SparkContext.getOrCreate(config)
+    val data = MLUtils.loadLibSVMFile(sc, file("fuckyou_svm.txt"))
+    val hopeData = MLUtils.loadLibSVMFile(sc, file("hate_svm.txt"))
+    val hateData = MLUtils.loadLibSVMFile(sc, file("hope_svm.txt"))
+    val splits = data.randomSplit(Array(0.7, 0.3))
+    val (trainingData, testData) = (splits(0), splits(1))
+  }
+}
+
+object WatsonFriend {
 
   def queryResourcesFromStreamWatson(readFileName: String, writeFileName: String, isGood:Boolean): Unit = {
     implicit val formats = org.json4s.DefaultFormats
@@ -55,18 +70,27 @@ object Spark {
     preParse.map(read[FeatureLabel]).toList
   }
 
-  def main(args: Array[String]): Unit = {
-    // Parse watson and store it into files
-    val f1 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/hope_stream.txt", "spark/src/main/resources/hope_resources.txt", isGood = true))
-    val f2 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/fuckyou_stream.txt",  "spark/src/main/resources/fuckyou_resources.txt", isGood = false))
-    val f3 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/hate_stream.txt",  "spark/src/main/resources/hate_resources.txt", isGood = false))
-    val await = (f: Future[_]) => Await.result(f, new FiniteDuration(45, scala.concurrent.duration.MINUTES))
-    await(f1)
-    await(f2)
-    await(f3)
+  def writeToSvm(featureLabels: List[FeatureLabel], fileName: String) = {
+    val bw = BufferedWriter(fileName)
+    bw.write(featureLabels.foldRight("")((label, acc) => s"${label.toSvmRow}\n$acc"))
+    bw.close()
+  }
 
-    Await.result(f2, new FiniteDuration(45, scala.concurrent.duration.MINUTES))
-    Await.result(f3, new FiniteDuration(45, scala.concurrent.duration.MINUTES))
+  def main(args: Array[String]): Unit = {
+    writeToSvm(readResourceFromFile(Spark.file("hate_resources.txt")), Spark.file("hate_svm.txt"))
+    writeToSvm(readResourceFromFile(Spark.file("hope_resources.txt")), Spark.file("hope_svm.txt"))
+
+//    // Parse watson and store it into files. Hold onto your bumholes this takes a while.
+//    val f1 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/hope_stream.txt", "spark/src/main/resources/hope_resources.txt", isGood = true))
+//    val f2 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/fuckyou_stream.txt",  "spark/src/main/resources/fuckyou_resources.txt", isGood = false))
+//    val f3 = Future(queryResourcesFromStreamWatson("spark/src/main/resources/hate_stream.txt",  "spark/src/main/resources/hate_resources.txt", isGood = false))
+//    val await = (f: Future[_]) => Await.result(f, new FiniteDuration(45, scala.concurrent.duration.MINUTES))
+//    await(f1)
+//    await(f2)
+//    await(f3)
+//
+//    Await.result(f2, new FiniteDuration(45, scala.concurrent.duration.MINUTES))
+//    Await.result(f3, new FiniteDuration(45, scala.concurrent.duration.MINUTES))
   }
 
 }
@@ -129,7 +153,11 @@ case class Emotion(anger: Double = -1, disgust: Double = -1, fear: Double = -1, 
   }
 }
 
-case class FeatureLabel(emotion: Emotion, frequency: Double, isGood: Boolean)
+case class FeatureLabel(emotion: Emotion, frequency: Double, isGood: Boolean) {
+  def toSvmRow:String = {
+    s"${if (isGood) 1 else 0} 1:${emotion.anger} 2:${emotion.disgust} 3:${emotion.fear} 4:${emotion.joy} 5:${emotion.sadness} 6:${frequency}"
+  }
+}
 
 object BufferedReader {
   def apply(file: String): BufferedReader = {
